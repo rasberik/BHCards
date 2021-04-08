@@ -4583,9 +4583,10 @@ class XmlHttpRequest {
             console.log(args[1])
             args[1] = "https://cors-anywhere.herokuapp.com/" + args[1]; 
             this.openArgs = args; 
-            this.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+           
             this.xmlHttpRequest.open.apply(this.xmlHttpRequest, args); 
-             console.log(args[1])
+            this.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            console.log(args[1]);
         }
     }
     overrideMimeType(mime) { this.mimeType = mime; this.xmlHttpRequest.overrideMimeType(mime); }
