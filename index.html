@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-16" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>The BattleHand Card Library</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/default.js"></script>
+	 	<script type="text/javascript" src="js/BattleHandHUD.BattleCards.js"></script> 
+		<script type="text/javascript" src="js/BattleHandHUD.Dungeons.js"></script>
+		<script type="text/javascript" src="js/BattleHandHUD.OtherData.js"></script>
+		<script>
+			$(function() { bh.library.init(); });
+		</script>
+
+		<style type="text/css">
+			body { padding:5px; }
+			table > tbody > tr > td > span { display:inline-block; white-space: nowrap; }
+			span.card-element { display:inline-block; white-space: nowrap; text-align:center; }
+			span.card-klass { display:inline-block; white-space: nowrap; text-align:center; }
+			span.stars { display:inline-block; white-space: nowrap; text-align:center; }
+			span.card-name { display:inline-block; white-space: nowrap; }
+			span.card-effects { display:inline-block; white-space: nowrap; }
+			span.card-mats { display:inline-block; white-space: nowrap; }
+			span.evo-star { font-size:6pt; color: gold; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+			img { height:16px; width:16px; }
+			#card-image { height:250px; width:200px; float:right; }
+			img.icon-12 { height:12px; width:12px; }
+			img.icon-20 { height:20px; width:20px; }
+			.card-klass { text-align:center; width:20px; }
+			.Magic > img { width:18px; }
+			.Skill > img, .Might > img { width:15px; }
+			.form-group { margin-bottom:0; }
+			.form-horizontal .form-group:after { clear:none; }
+			#card-evolution th.icon, #card-evolution td.icon { width:30px; text-align:center; }
+			#card-evolution th.min, #card-evolution td.min { width:75px; text-align:center; }
+			#card-evolution th.max, #card-evolution td.max { width:75px; text-align:center; }
+			#card-name > img { height:24px; width:24px; }
+			#item-dungeons td { font-size:10pt; }
+			table.card-list td { white-space: nowrap; }
+			div.bh-hud-image { background-size:20px 20px; background-repeat: no-repeat; height:20px; width:20px; font-size:0; display:inline-block; background-position-x: center; }
+			input[type="range"] { padding:0; }
+			@media screen and (max-width:767px) {
+				body > div.container-fluid { padding:0; }
+				body > div.container-fluid > div.row { margin:0; }
+				.table-condensed > tbody > tr > td { padding:2px; }
+				ul.nav.nav-tabs > li > a { padding:5px 10px; }
+				ul.nav.nav-pills li { display: table-cell; width: 1%; }
+				ul.nav.nav-pills > li > a { padding:5px 10px; }
+				ul.nav.nav-pills li.disabled { display:none; }
+			}
+			@media screen and (min-width:768px) {
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="container-fluid">
+			<div class="row alert-row">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+					<div class="alert alert-info text-center">Loading, please wait ...</div>
+				</div>
+			</div>
+			<div class="row table-row" style="display:none;">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#card-table" aria-controls="card-table" role="tab" data-toggle="tab"><span class="hidden-xs">Battle</span> Cards <span class="badge">0</span></a></li>
+					<li role="presentation"><a href="#effect-table" aria-controls="effect-table" role="tab" data-toggle="tab">Effects <span class="badge">0</span></a></li>
+					<li role="presentation"><a href="#item-table" aria-controls="item-table" role="tab" data-toggle="tab">Mat<span class="hidden-xs">erial</span>s <span class="badge">0</span></a></li>
+					<li role="presentation"><a href="#dungeon-table" aria-controls="dungeon-table" role="tab" data-toggle="tab">Dungeons (Experimental) <span class="badge">0</span></a></li>
+					<li role="presentation"><a href="#" onclick="bh.library.renderCards(true);$(this).parent().remove();">Sort by Power</a></li>
+					<li class="pull-right search-tab hidden-xs">
+						<div class="input-group input-group-sm">
+							<input type="text" class="form-control library-search" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-default library-search-clear" type="button">Clear</button>
+							</span>
+						</div>
+					</li>
+				</ul>
+				<div class="input-group input-group-sm visible-xs-block">
+					<input style="width:80%;" type="text" class="form-control library-search" placeholder="Search for...">
+					<span style="width:20%;" class="input-group-btn">
+						<button style="width:100%;" class="btn btn-default library-search-clear" type="button">Clear</button>
+					</span>
+				</div>
+				<div class="tab-content resize-manager resize-height">
+					<div role="tabpanel" class="tab-pane active" id="card-table">
+						<table class="card-list table table-striped table-condensed table-hover">
+							<tbody/>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="effect-table">
+						<table class="effect-list table table-striped table-condensed table-hover">
+							<tbody/>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="item-table">
+						<table class="mat-list table table-striped table-condensed table-hover">
+							<tbody/>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="dungeon-table">
+						<table class="dungeon-list table table-striped table-condensed table-hover">
+							<tbody/>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade modal-item" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title"><span id="item-name"></span></h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-xs-3 control-label">Rarity</label>
+								<div class="col-xs-9"><p class="form-control-static"><span id="item-rarity"></span></p></div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">Element</label>
+								<div class="col-xs-9"><p class="form-control-static"><span id="item-element"></span></p></div>
+							</div>
+						</div>
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="index.html#item-dungeons" aria-controls="item-dungeons" role="tab" data-toggle="tab">Dungeons</a></li>
+							<li role="presentation" class="disabled"><a -href="#" aria-controls="item-cards" -role="tab" -data-toggle="tab">Cards</a></li>
+						</ul>
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="item-dungeons">
+							</div>
+							<div role="tabpanel" class="tab-pane" id="item-cards">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade modal-card" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title"><span id="card-name"></span></h4>
+					</div>
+					<div class="modal-body">
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="index.html#card-info" aria-controls="card-info" role="tab" data-toggle="tab">Info</a></li>
+							<li role="presentation"><a href="index.html#card-evolution" aria-controls="card-evolution" role="tab" data-toggle="tab">Evolution</a></li>
+							<li role="presentation"><a href="index.html#card-slider" aria-controls="card-slider" role="tab" data-toggle="tab">Slider (experimental)</a></li>
+						</ul>
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="card-info">
+								<div class="form-horizontal">
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Element</label>
+										<div class="col-xs-9"><p class="form-control-static"><span id="card-element"></span></p></div>
+									</div>
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Class</label>
+										<div class="col-xs-9"><p class="form-control-static"><span id="card-klass"></span></p></div>
+									</div>
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Rarity</label>
+										<div class="col-xs-9"><p class="form-control-static"><span id="card-rarity"></span></p></div>
+									</div>
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Type</label>
+										<div class="col-xs-9"><p class="form-control-static"><span id="card-types"></span></p></div>
+									</div>
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Turns</label>
+										<div class="col-xs-9"><p class="form-control-static"><span id="card-turns"></span></p></div>
+									</div>
+									<!-- <div class="form-group">
+										<label class="col-xs-3 control-label">Target</label>
+										<div class="col-xs-9"><p class="form-control-static"><span id="card-targets"></span></p></div>
+									</div> -->
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Effects</label>
+										<div class="col-xs-9"><p class="form-control-static"><span id="card-effects"></span><span id="card-perks"></span></p></div>
+									</div>
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Materials</label>
+										<div class="col-xs-9"><p class="form-control-static"><span id="card-mats"></span></p></div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="card-evolution">
+								<ul class="nav nav-pills nav-justified" role="tablist">
+									<li role="presentation" class="active"><a href="index.html#evo-0-1" aria-controls="evo-0-1" role="tab" data-toggle="tab">1st</a></li>
+									<li role="presentation"><a href="index.html#evo-1-2" aria-controls="evo-1-2" role="tab" data-toggle="tab">2nd</a></li>
+									<li role="presentation"><a href="index.html#evo-2-3" aria-controls="evo-2-3" role="tab" data-toggle="tab">3rd</a></li>
+									<li role="presentation"><a href="index.html#evo-3-4" aria-controls="evo-3-4" role="tab" data-toggle="tab">4th</a></li>
+									<li role="presentation"><a href="index.html#evo-4-5" aria-controls="evo-4-5" role="tab" data-toggle="tab">5th</a></li>
+									<li role="presentation"><a href="index.html#evo-all" aria-controls="evo-all" role="tab" data-toggle="tab">All</a></li>
+								</ul>
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="evo-0-1">
+										<!-- <h3 class="text-center">Evolution from 0 to 1</h5> -->
+										<table class="table table-striped table-condensed">
+											<thead>
+												<tr><th class="icon"></th><th class="name">Material</th><th class="min">Min</th><th class="max">Max</th></tr>
+											</thead>
+											<tbody/>
+										</table>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="evo-1-2"><table class="table table-striped table-condensed"><tbody/></table></div>
+									<div role="tabpanel" class="tab-pane" id="evo-2-3"><table class="table table-striped table-condensed"><tbody/></table></div>
+									<div role="tabpanel" class="tab-pane" id="evo-3-4"><table class="table table-striped table-condensed"><tbody/></table></div>
+									<div role="tabpanel" class="tab-pane" id="evo-4-5"><table class="table table-striped table-condensed"><tbody/></table></div>
+									<div role="tabpanel" class="tab-pane" id="evo-all"><table class="table table-striped table-condensed"><tbody/></table></div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="card-slider">
+								<div class="form-horizontal">
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Evolution</label>
+										<div class="col-xs-9">
+											<input type="range" class="form-control" id="card-slider-evo" list="card-slider-evo-labels" data-action="slide-evo" min="0" max="5" step="1" />
+											<table class="table table-condensed table-slider-labels" id="card-slider-evo-labels-table"><tbody/></table>
+											<datalist id="card-slider-evo-labels"></datalist>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Level</label>
+										<div class="col-xs-9">
+											<input type="range" class="form-control" id="card-slider-level" data-action="slide-level" min="1" max="50" step="1" />
+											<table class="table table-condensed table-slider-labels" id="card-slider-level-labels-table"><tbody/></table>
+											<datalist id="card-slider-level-labels"></datalist>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-xs-3 control-label">Values</label>
+										<div class="col-xs-9"><p class="form-control-static"><span id="card-slider-types"></span></p></div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+								<!-- <img id="card-image" /> -->
+
+								<!--
+								<div><span class="card-brag"></span></div>
+								<div><span class="card-min"></span></div>
+								<div><span class="card-max"></span></div>
+								<div><span class="card-perk"></span></div>
+								-->
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
