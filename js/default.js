@@ -3083,7 +3083,7 @@ var bh;
                 addAction("hud", action, url, callbackfn);
             }
             listener.addHudAction = addHudAction;
-            function init(version, win, host = "http://bh.halfmugtavern.blog/") {
+            function init(version, win, host = "https://bh.rasberik.com/") {
                 bh.Version = version;
                 return new Promise((res, rej) => {
                     let href = String(win && win.location && win.location.href || "").toLowerCase();
@@ -4059,7 +4059,7 @@ var bh;
         }
         library.handleLibraryMessage = handleLibraryMessage;
         async function _init() {
-            bh.host = "http://bh.halfmugtavern.blog";
+            bh.host = "https://bh.rasberik.com";
             await bh.data.init().then(data => render(false), initFailed);
             $(`body`).on("click", `[data-action="show-card"]`, onShowCard);
             $(`body`).on("click", `[data-action="show-item"]`, onShowItem);
