@@ -4246,20 +4246,24 @@ var bh;
                                 `<span class="hero-rating-bar"><div class="progress-bar ${threshold} ${hero.hasOP ? "has-op" : ""}"><span class="hero-rating">${formatScouterPowerRating(hero)}</span></div></span>` +
                                 `<span class="hero-effects" data-count="${hero.opEffects.length}">${hero.opEffects.map((e, i) => bh.EffectRepo.toScouterImage(e, i)).join("")}</span>`;
                         }
-                        if (player.isMe || player.isAlly) {
-                            let levelText = `${bh.getImg("heroes", hero.name)} ${hero.name} (${hero.level} / ${bh.HeroRepo.MaxLevel}${hero.isMaxed ? "; maxed" : hero.isCapped ? "; capped" : ""})`,
-                                level = hero.isMaxed ? `<div>${levelText}</div>` : bh.renderExpandable(hero.guid + "maxGold", levelText, hero.goldHtml),
-                                abilities = hero.playerHeroAbilities.map((playerHeroAbility) => {
-                                    let cappedOrMaxed = playerHeroAbility.isMaxed ? "; maxed" : playerHeroAbility.isCapped ? "; capped" : "",
-                                        levelText = playerHeroAbility.isLocked ? bh.getImg("misc", "Lock") : `(${playerHeroAbility.level} / ${playerHeroAbility.levelMax}${cappedOrMaxed})`,
-                                        text = `${playerHeroAbility.img} ${playerHeroAbility.name} ${levelText}`,
-                                        children = "";
-                                    return playerHeroAbility.isMaxed || ((children += playerHeroAbility.materialHtml), (children += playerHeroAbility.goldHtml)), bh.renderExpandable(hero.guid + playerHeroAbility.guid, text, children);
-                                }),
-                                cardsHtml = hero.deck.map((card) => card.toHeroRowHtml(hero)).join("");
-                            content = `${level}${abilities.join("")}${cardsHtml}`;
+                        if (!hero.isLocked) {
+                            //if (player.isMe || player.isAlly) {
+                            
+                                let levelText = `${bh.getImg("heroes", hero.name)} ${hero.name} (${hero.level} / ${bh.HeroRepo.MaxLevel}${hero.isMaxed ? "; maxed" : hero.isCapped ? "; capped" : ""})`,
+                                    level = hero.isMaxed ? `<div>${levelText}</div>` : bh.renderExpandable(hero.guid + "maxGold", levelText, hero.goldHtml),
+                                    abilities = hero.playerHeroAbilities.map((playerHeroAbility) => {
+                                        let cappedOrMaxed = playerHeroAbility.isMaxed ? "; maxed" : playerHeroAbility.isCapped ? "; capped" : "",
+                                            levelText = playerHeroAbility.isLocked ? bh.getImg("misc", "Lock") : `(${playerHeroAbility.level} / ${playerHeroAbility.levelMax}${cappedOrMaxed})`,
+                                            text = `${playerHeroAbility.img} ${playerHeroAbility.name} ${levelText}`,
+                                            children = "";
+                                        return playerHeroAbility.isMaxed || ((children += playerHeroAbility.materialHtml), (children += playerHeroAbility.goldHtml)), bh.renderExpandable(hero.guid + playerHeroAbility.guid, text, children);
+                                    }),
+                                    cardsHtml = hero.deck.map((card) => card.toHeroRowHtml(hero)).join("");
+                                content = `${level}${abilities.join("")}${cardsHtml}`;
+                            //}
+                            //html += buildPanel(id, hero.elementType, title, content, player.isMe || player.isAlly);
+                            html += buildPanel(id, hero.elementType, title, content, true);
                         }
-                        html += buildPanel(id, hero.elementType, title, content, player.isMe || player.isAlly);
                     }),
                         getOrCreateContainer(-1 == arenaIndex ? player.guid : "arena-" + arenaIndex).html(html),
                         hud.postResize();
@@ -4297,7 +4301,7 @@ var bh;
             }
             function openLibraryFromHud(local = !1) {
                 let host = local ? "." : bh.host;
-                messenger = new bh.Messenger(window, handleLibraryMessage, window.open(host + "/cards.html?hud,complete", "bh-hud-library", "", !0));
+                messenger = new bh.Messenger(window, handleLibraryMessage, window.open(host + "/", "bh-hud-library", "", !0));
             }
             function postMessage(action, data = null) {
                 let message = bh.Messenger.createMessage(action, { action: action, data: data });
