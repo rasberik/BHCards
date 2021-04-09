@@ -1,1 +1,1 @@
-bh.CurrentVersion = "4.8.4";
+bh.CurrentVersion = "5.0.0";

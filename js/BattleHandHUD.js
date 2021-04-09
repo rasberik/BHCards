@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Jai's BattleHand HUD
+// @name         Redbirds BattleHand HUD
 // @namespace    https://bh.rasberik.com
-// @version      4.8.4
-// @description  BattleHand QoL HUD / Scout interface; Donations may be sent via paypal to randal.t.meyer@gmail.com
-// @author       Randal (aka Jai or JaiLadnar)
+// @version      5.0.0
+// @description  Updated version by NonPensavo#5458. 
+// @author       Randal (aka Jai or JaiLadnar), Redbirds Build: NonPensavo#5458
 // @updateURL    https://bh.rasberik.com/js/BattleHandHUD.js
 // @require      https://bh.rasberik.com/js/default.js
 // @require      https://bh.rasberik.com/js/BattleHandHUD.BattleCards.js
@@ -15,4 +15,4 @@
 // @grant        unsafeWindow
 // ==/UserScript==
 
-bh.hud.listener.init("4.8.4", unsafeWindow);
+bh.hud.listener.init("5.0.0", unsafeWindow);
