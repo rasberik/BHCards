@@ -823,18 +823,20 @@ var bh;
                 });
         }
         function isValidEffectOrPerk(playerBattleCard, gameEffect) {
+            //console.log(gameEffect)
             return (
                 (!gameEffect.perkMultiplier || 1 == gameEffect.perkMultiplier) &&
                 (("Accuracy Down" == gameEffect.effect && "100%" == gameEffect.percent) ||
-                    ("Sleep" == gameEffect.effect && gameEffect.turns > 1) ||
-                    ("Defence Up" == gameEffect.effect && "100%" == gameEffect.percent) ||
-                    !("Haste" != gameEffect.effect || !gameEffect.target.all) ||
-                    ("Haste" == gameEffect.effect && gameEffect.turns > playerBattleCard.turns) ||
-                    !("Trait Up" != gameEffect.effect || !gameEffect.target.all) ||
-                    ("Evade" == gameEffect.effect && "100%" == gameEffect.percent && gameEffect.turns > playerBattleCard.turns))
+                 ("Sleep" == gameEffect.effect && gameEffect.turns > 1 && gameEffect.target.offense) ||
+                 ("Defence Up" == gameEffect.effect && "100%" == gameEffect.percent) ||
+                 !("Haste" != gameEffect.effect || !gameEffect.target.all) ||
+                 ("Haste" == gameEffect.effect && gameEffect.turns > playerBattleCard.turns) ||
+                 !("Trait Up" != gameEffect.effect || !gameEffect.target.all) ||
+                 ("Evade" == gameEffect.effect && "100%" == gameEffect.percent && gameEffect.turns > playerBattleCard.turns))
             );
         }
         function getIsOP(playerBattleCard) {
+            //console.log(playerBattleCard.targets)
             return bh.Cacheable.fromCache("PlayerBattleCard.getIsOP." + playerBattleCard.guid, () => {
                 if (playerBattleCard.rarityType != bh.RarityType.SuperRare && playerBattleCard.rarityType != bh.RarityType.Legendary) return !1;
                 let isOp = null != getOpEffects(playerBattleCard).find((gameEffect) => isValidEffectOrPerk(playerBattleCard, gameEffect));
@@ -842,11 +844,9 @@ var bh;
             });
         }
         function getOpEffects(playerBattleCard) {
-            return bh.Cacheable.fromCache("PlayerBattleCard.getOpEffects." + playerBattleCard.guid, () =>
-                playerBattleCard.rarityType != bh.RarityType.SuperRare && playerBattleCard.rarityType != bh.RarityType.Legendary
-                    ? []
-                    : bh.GameEffect.parseAll(playerBattleCard.playerCard).filter((gameEffect) => bh.OpEffects.includes(gameEffect.effect))
-            );
+            //let opEffects = getOpEffects(playerBattleCard).filter((gameEffect) => isValidEffectOrPerk(playerBattleCard, gameEffect));
+            let opEffects = bh.GameEffect.parseAll(playerBattleCard.playerCard).filter((gameEffect) => bh.OpEffects.includes(gameEffect.effect));
+            return bh.Cacheable.fromCache("PlayerBattleCard.getOpEffects." + playerBattleCard.guid, () => (playerBattleCard.rarityType != bh.RarityType.SuperRare && playerBattleCard.rarityType != bh.RarityType.Legendary) ? [] : opEffects);
         }
         function getComboOpEffects(playerBattleCard) {
             return bh.Cacheable.fromCache("PlayerBattleCard.getComboOpEffects." + playerBattleCard.guid, () => {
@@ -889,6 +889,9 @@ var bh;
                         let runesNeeded = bh.data.calcMaxRunesNeeded(this.playerCard, this.evoLevel),
                             rune = me.inventory.find((item) => item.isRune && this.matchesHero(bh.data.HeroRepo.find(item.name.split("'")[0]))),
                             runesOwned = (rune && rune.count) || 0;
+
+
+                        console.log(me.inventory.find((item) => item.isRune && this.matchesHero(bh.data.HeroRepo.find(item.name.split("'")[0]))));
                         runesNeeded && rune && (html += bh.PlayerInventoryItem.toRowHtml(rune, runesOwned, runesNeeded));
                         let crystalsNeeded = bh.data.calcMaxCrystalsNeeded(this.playerCard, this.evoLevel),
                             crystal = me.inventory.find((item) => item.isCrystal && this.elementType == item.elementType),
@@ -901,6 +904,12 @@ var bh;
             _rowHtml(hero, badgeValue, badgeCss, powerRating = !0) {
                 let badgeHtml = badgeValue ? `<span class="badge pull-right ${badgeCss || ""}">${badgeValue}</span>` : "",
                     children = "number" == typeof badgeValue || this.isMaxed ? "" : this._rowChildren(),
+                    content = bh.renderExpandable(this.playerCard.id, `${this.toHeroHtml(hero, powerRating)}${badgeHtml}`, children);
+                return `<div data-dblclick-action="sort-battlecards" data-element-type="${this.elementType}" data-rarity-type="${this.rarityType}" data-klass-type="${this.klassType}" data-brag="${this.brag ? "Brag" : ""}">${content}</div>`;
+            }
+            _heroRowHtml(hero, isMe, powerRating = !0) {
+                let badgeHtml = "",
+                    children = isMe ? this._rowChildren() : ``,
                     content = bh.renderExpandable(this.playerCard.id, `${this.toHeroHtml(hero, powerRating)}${badgeHtml}`, children);
                 return `<div data-dblclick-action="sort-battlecards" data-element-type="${this.elementType}" data-rarity-type="${this.rarityType}" data-klass-type="${this.klassType}" data-brag="${this.brag ? "Brag" : ""}">${content}</div>`;
             }
@@ -1042,8 +1051,8 @@ var bh;
             rateCard(hero) {
                 return bh.PowerRating.ratePlayerCard(this.playerCard, hero);
             }
-            toHeroRowHtml(hero) {
-                return this._rowHtml(hero);
+            toHeroRowHtml(hero, isMe) {
+                return this._heroRowHtml(hero, isMe);
             }
             toHeroHtml(hero, powerRating = !0) {
                 let count = this.count > 1 ? `x${this.count}` : "",
@@ -1581,7 +1590,7 @@ var bh;
             get rowHtml() {
                 return this.fromCache("rowHtml", () => {
                     let folder = bh.ItemType[this.itemType].toLowerCase() + "s",
-                        name = this.isEvoJar ? this.name.replace(/\W/g, "") : this.isCrystal ? this.name.split(/ /)[0] : bh.data.HeroRepo.find(this.name.split("'")[0]).abilities[0].name.replace(/\W/g, ""),
+                        name = this.isEvoJar ? this.name.replace(/\W/g, "") : this.isCrystal ? this.name.split(/ /)[0] : bh.data.HeroRepo.find(this.name.split("'")[0])?.abilities[0].name.replace(/\W/g, ""),
                         image = bh.getImg20(folder, name),
                         needed = this.needed,
                         ofContent = needed ? ` / ${bh.utils.formatNumber(needed)}` : "",
@@ -1660,17 +1669,19 @@ var bh;
                         ? item.name.replace(/\W/g, "")
                         : PlayerInventoryItem.isCrystal(item)
                         ? item.name.split(/ /)[0]
-                        : bh.data.HeroRepo.find(item.name.split("'")[0]).abilities[0].name.replace(/\W/g, ""),
+                        : bh.data.HeroRepo.find(item.name.split("'")[0])?.abilities[0].name.replace(/\W/g, ""),
                     image = bh.getImg20(folder, name),
                     color,
                     badge = `<span class="badge pull-right ${count < needed ? "bg-danger" : "bg-success"}">${bh.utils.formatNumber(count)} / ${bh.utils.formatNumber(needed)}</span>`;
                 return `<div>${image} ${item.name} ${badge}</div>`;
             }
         }
-        function renderExpandable(guid, text, children) {
+        function renderExpandable(guid, text, children, isMe = true) {
             if (!children) return `<div>${text}</div>`;
             let expander, expandable;
-            return `<div>${text} ${`<button class="bs-btn bs-btn-link bs-btn-xs jai-hud-button" type="button" data-action="toggle-child" data-guid="${guid}">[+]</button>`}</div>${`<div class="jai-hud-child-scroller" data-parent-guid="${guid}">${children}</div>`}`;
+            var icon = isMe ? `${`<button class="bs-btn bs-btn-link bs-btn-xs jai-hud-button" type="button" data-action="toggle-child" data-guid="${guid}">[+]</button>`}` : ``;
+            var scr = `${`<div class="jai-hud-child-scroller" data-parent-guid="${guid}">${children}</div>`}`;
+            return `<div>${text} ` + icon + ` </div>` + scr;
         }
         (bh.PlayerInventoryItem = PlayerInventoryItem), (bh.renderExpandable = renderExpandable);
     })(bh || (bh = {})),
@@ -1705,12 +1716,10 @@ var bh;
                 return bh.RarityType[this._.name.replace(/ /g, "")];
             }
             get rowHtml() {
-                let html = this.html,
-                    expander = "",
-                    children = "";
-                return (
-                    this.needed &&
-                        ((expander = `<button class="bs-btn bs-btn-link bs-btn-xs jai-hud-button" type="button" data-action="toggle-child" data-guid="${this.guid}">[+]</button>`),
+                let html = this.html, expander = "", children = "";
+                //console.log(this.player.isMe);
+                //console.log(this.player.htmlFriendlyName);
+                return (this.needed && ((expander = `<button class="bs-btn bs-btn-link bs-btn-xs jai-hud-button" type="button" data-action="toggle-child" data-guid="${this.guid}">[+]</button>`),
                         (children = `<div class="jai-hud-child-scroller" data-parent-guid="${this.guid}">`),
                         this.player.filterActiveBattleCards(bh.RarityType[this.rarityType]).forEach((playerBattleCard) => (children += playerBattleCard.toRowHtml(playerBattleCard.maxWildCardsNeeded, this.count))),
                         (children += "</div>")),
@@ -3191,8 +3200,7 @@ var bh;
                     container.data("sort", newSortTag),
                         bh.utils.setToStorage("BH-HUD-SortTag", newSortTag),
                         playerGuid || (playerGuid = container.data("guid")),
-                        bh.data.PlayerRepo.find(playerGuid)
-                            .heroes.sort((a, b) => sortHeroesByTag(a, b, newSortTag))
+                        bh.data.PlayerRepo.find(playerGuid)?.heroes.sort((a, b) => sortHeroesByTag(a, b, newSortTag))
                             .forEach((hero) => container.find(`[data-guid="${playerGuid}-${hero.guid}"]`).appendTo(container));
                 }
                 events.sortHeroesByTag = sortHeroesByTag;
@@ -3207,7 +3215,7 @@ var bh;
                         newSortTag = battlecardsSortTags[oldSortIndex + 1] || "rarity-evo-name";
                     container.data("sort", newSortTag),
                         bh.utils.setToStorage("BH-HUD-BattlecardsSortTag", newSortTag),
-                        sortBattleCardsByTag(bh.data.PlayerRepo.find(playerGuid).battleCards, newSortTag).forEach((card) => container.append(card.rowHtml));
+                        sortBattleCardsByTag(bh.data.PlayerRepo.find(playerGuid)?.battleCards, newSortTag).forEach((card) => container.append(card.rowHtml));
                 }
                 function onChangeAction(ev) {
                     let el, action;
@@ -4248,17 +4256,16 @@ var bh;
                         }
                         if (!hero.isLocked) {
                             //if (player.isMe || player.isAlly) {
-                            
                                 let levelText = `${bh.getImg("heroes", hero.name)} ${hero.name} (${hero.level} / ${bh.HeroRepo.MaxLevel}${hero.isMaxed ? "; maxed" : hero.isCapped ? "; capped" : ""})`,
-                                    level = hero.isMaxed ? `<div>${levelText}</div>` : bh.renderExpandable(hero.guid + "maxGold", levelText, hero.goldHtml),
+                                    level = hero.isMaxed ? `<div>${levelText}</div>` : bh.renderExpandable(hero.guid + "maxGold", levelText, hero.goldHtml, player.isMe),
                                     abilities = hero.playerHeroAbilities.map((playerHeroAbility) => {
                                         let cappedOrMaxed = playerHeroAbility.isMaxed ? "; maxed" : playerHeroAbility.isCapped ? "; capped" : "",
                                             levelText = playerHeroAbility.isLocked ? bh.getImg("misc", "Lock") : `(${playerHeroAbility.level} / ${playerHeroAbility.levelMax}${cappedOrMaxed})`,
                                             text = `${playerHeroAbility.img} ${playerHeroAbility.name} ${levelText}`,
                                             children = "";
-                                        return playerHeroAbility.isMaxed || ((children += playerHeroAbility.materialHtml), (children += playerHeroAbility.goldHtml)), bh.renderExpandable(hero.guid + playerHeroAbility.guid, text, children);
+                                        return playerHeroAbility.isMaxed || ((children += playerHeroAbility.materialHtml), (children += playerHeroAbility.goldHtml)), bh.renderExpandable(hero.guid + playerHeroAbility.guid, text, children, player.isMe);
                                     }),
-                                    cardsHtml = hero.deck.map((card) => card.toHeroRowHtml(hero)).join("");
+                                    cardsHtml = hero.deck.map((card) => card.toHeroRowHtml(hero, player.isMe)).join("");
                                 content = `${level}${abilities.join("")}${cardsHtml}`;
                             //}
                             //html += buildPanel(id, hero.elementType, title, content, player.isMe || player.isAlly);

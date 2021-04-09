@@ -1,6 +1,133 @@
-bh.TSV[bh.BoosterCardRepoGID] = "guid\tname\telement\trarity\tchallenge\ndcf39a7e-4509-450f-8fe3-71143facfb02\tHoly Book\tA\tC\t\n280e88cd-ab9c-41dd-a893-33bcf619d2b3\tSky Chart\tA\tU\t\n9fc0d34e-f558-42a2-925a-d22baec52557\tWind Totem\tA\tR\t\n44ef945c-f372-4539-9245-1bcfef54e2c3\tLightning Bird\tA\tS\t\ncc0d186b-47fb-42de-8b53-1ff039a8b8f3\tBroom Stick\tA\tR\tHalloween\n8ed656f8-2854-42f1-8a51-93bb2d577c63\tBat Skull\tA\tS\tHalloween\ne34b79a0-a0ee-4f2f-befa-a794ed78d766\tRobin\tA\tR\tChristmas\n1fa757f2-30bc-4a82-919c-3d759f2d2c19\tNorth Star\tA\tS\tChristmas\ncde2ae9f-98df-4acb-9345-5064529f829e\tPetrified Wood\tE\tC\t\n02a9bb2b-f32f-438a-911c-735facf21390\tGolem's Hand\tE\tU\t\ne9d74f9b-d5fc-48ce-88b8-ea2794daf93b\tForest Totem\tE\tR\t\nda1d98db-10ad-4ae2-bf26-37c1ecef60ab\tPoison Toad\tE\tS\t\nddc21fc5-7056-4eb2-a2e6-2864f257ce5f\tPoison Apple\tE\tR\tHalloween\n59168a46-cdae-44a9-939d-dcb43f686a91\tMandrake Root\tE\tS\tHalloween\na573a87a-78ee-4c4f-b3c9-228e9b2e8a11\tHolly\tE\tR\tChristmas\n4849337e-a997-4394-9ff5-3ab9074a6665\tElf's Hat\tE\tS\tChristmas\n2f84bc97-2002-40bd-a509-e064fee3f44f\tLantern\tF\tC\t\n392c9733-de3f-4ea2-8ae4-e4f3dbce74f8\tCrucible\tF\tU\t\nf3b0113e-f6be-4286-991e-eefcdcfe2b59\tBlazing Totem\tF\tR\t\n6fdb973d-92fd-4b7d-a88a-1a9f1b4b24b0\tSalamander\tF\tS\t\nc6ecc042-c7ce-4143-9ac3-223b8fb56803\tHot Horn\tF\tR\tHalloween\n1cbbd984-a952-42ca-8fe6-0a247d992f46\tBlack Candle\tF\tS\tHalloween\n71504842-6e14-4354-9e92-211817c2bc74\tBaubles\tF\tR\tChristmas\nf9042063-8a25-4047-a6b8-35f4757ad048\tChristmas Pudding\tF\tS\tChristmas\nc72202eb-f1cb-4415-ab6b-b9c293229785\tSpirit Lantern\tS\tC\t\ne784c1b6-2203-4bf3-974b-27abe55e6525\tCursed Book\tS\tU\t\n1814d2c3-057a-4e43-84e8-3b27af22d394\tCanopic Jar\tS\tR\t\n92a1b403-c815-442b-91af-1af81447e716\tWraith\tS\tS\t\n79ede7ed-3c92-4dc8-ab19-259814bc27c6\tDead Mans Toe\tS\tR\tHalloween\na75872e0-861b-46d3-a2cf-8f4e3abea8e2\tHaunted Mirror\tS\tS\tHalloween\n6a0b1adb-cf5e-41df-a620-addbe8cb9d00\tCoal\tS\tR\tChristmas\n64c58311-9e32-412b-afff-a9ce0f7886f9\tMulled Wine\tS\tS\tChristmas\n5f4a9c3d-adb6-4f51-a0ec-8ea7f5f67306\tAnchor\tW\tC\t\nbe4d84ef-e46b-4f14-876d-fe745d3e0edf\tSea Chart\tW\tU\t\n19f1ec84-87e1-401c-9520-6da5ec8d53df\tOcean Relic\tW\tR\t\nb3098e55-d784-4a87-8bf8-146e5c034ae7\tWater Nymph\tW\tS\t\n8971ac4c-3fcc-4c65-8137-194d63058eaf\tBowl of Worms\tW\tR\tHalloween\n663109a0-1a8c-4a74-811d-3c34bc56ba40\tGravestone\tW\tS\tHalloween\ne4ae44b7-8b12-4efe-a609-38d0592f602a\tSnowballs\tW\tR\tChristmas\n77d2e1a0-cacd-4bd6-8f3d-4ba80964dffe\tSnowman\tW\tS\tChristmas\ncc0f77e9-3830-4b34-b344-c8400d5c42d8\tOld Dice\tN\tC\t\n4ce4e035-b974-47f8-98dc-c8c2eb816604\tStinky Cheese\tN\tC\t\n7c5f4e63-1713-47f6-81e2-789abf9f3315\tGolden Eggs\tN\tU\t\ndf98cf4a-3942-47e2-88bf-d45e30f1033c\tRubber Duck\tN\tU\t\n67e38722-f2ce-47a4-8f65-fd6c48d166da\tMagic Beans\tN\tR\t\n49fca34a-46d2-4561-b823-5547e1b030ab\tMythril Skull\tN\tS\t\n92ebf3f5-23f8-4491-ab0b-f6a4f16cd11c\tCandy Corn\tN\tR\tHalloween\n1c9f05f9-e1a2-440a-a59d-20142169aba2\tJack O' Lantern\tN\tS\tHalloween\nc22714d2-249b-4c92-bee5-61ac25cbd3e5\tSanta's Sack\tN\tR\tChristmas\n7f138ee7-d7e4-4e70-983f-d973794fb7b4\tSanta's Hat\tN\tS\tChristmas";
+bh.TSV[bh.BoosterCardRepoGID] = "guid\tname\telement\trarity\tchallenge\n" + 
+"dcf39a7e-4509-450f-8fe3-71143facfb02\tHoly Book\tA\tC\t\n" + 
+"280e88cd-ab9c-41dd-a893-33bcf619d2b3\tSky Chart\tA\tU\t\n" + 
+"9fc0d34e-f558-42a2-925a-d22baec52557\tWind Totem\tA\tR\t\n" + 
+"44ef945c-f372-4539-9245-1bcfef54e2c3\tLightning Bird\tA\tS\t\n" + 
+"cc0d186b-47fb-42de-8b53-1ff039a8b8f3\tBroom Stick\tA\tR\tHalloween\n" + 
+"8ed656f8-2854-42f1-8a51-93bb2d577c63\tBat Skull\tA\tS\tHalloween\n" + 
+"e34b79a0-a0ee-4f2f-befa-a794ed78d766\tRobin\tA\tR\tChristmas\n" + 
+"1fa757f2-30bc-4a82-919c-3d759f2d2c19\tNorth Star\tA\tS\tChristmas\n" + 
+"cde2ae9f-98df-4acb-9345-5064529f829e\tPetrified Wood\tE\tC\t\n" + 
+"02a9bb2b-f32f-438a-911c-735facf21390\tGolem's Hand\tE\tU\t\n" + 
+"e9d74f9b-d5fc-48ce-88b8-ea2794daf93b\tForest Totem\tE\tR\t\n" + 
+"da1d98db-10ad-4ae2-bf26-37c1ecef60ab\tPoison Toad\tE\tS\t\n" + 
+"ddc21fc5-7056-4eb2-a2e6-2864f257ce5f\tPoison Apple\tE\tR\tHalloween\n" + 
+"59168a46-cdae-44a9-939d-dcb43f686a91\tMandrake Root\tE\tS\tHalloween\n" + 
+"a573a87a-78ee-4c4f-b3c9-228e9b2e8a11\tHolly\tE\tR\tChristmas\n" + 
+"4849337e-a997-4394-9ff5-3ab9074a6665\tElf's Hat\tE\tS\tChristmas\n" + 
+"2f84bc97-2002-40bd-a509-e064fee3f44f\tLantern\tF\tC\t\n" + 
+"392c9733-de3f-4ea2-8ae4-e4f3dbce74f8\tCrucible\tF\tU\t\n" + 
+"f3b0113e-f6be-4286-991e-eefcdcfe2b59\tBlazing Totem\tF\tR\t\n" + 
+"6fdb973d-92fd-4b7d-a88a-1a9f1b4b24b0\tSalamander\tF\tS\t\n" + 
+"c6ecc042-c7ce-4143-9ac3-223b8fb56803\tHot Horn\tF\tR\tHalloween\n" + 
+"1cbbd984-a952-42ca-8fe6-0a247d992f46\tBlack Candle\tF\tS\tHalloween\n" + 
+"71504842-6e14-4354-9e92-211817c2bc74\tBaubles\tF\tR\tChristmas\n" + 
+"f9042063-8a25-4047-a6b8-35f4757ad048\tChristmas Pudding\tF\tS\tChristmas\n" + 
+"c72202eb-f1cb-4415-ab6b-b9c293229785\tSpirit Lantern\tS\tC\t\n" + 
+"e784c1b6-2203-4bf3-974b-27abe55e6525\tCursed Book\tS\tU\t\n" + 
+"1814d2c3-057a-4e43-84e8-3b27af22d394\tCanopic Jar\tS\tR\t\n" + 
+"92a1b403-c815-442b-91af-1af81447e716\tWraith\tS\tS\t\n" + 
+"79ede7ed-3c92-4dc8-ab19-259814bc27c6\tDead Mans Toe\tS\tR\tHalloween\n" + 
+"a75872e0-861b-46d3-a2cf-8f4e3abea8e2\tHaunted Mirror\tS\tS\tHalloween\n" + 
+"6a0b1adb-cf5e-41df-a620-addbe8cb9d00\tCoal\tS\tR\tChristmas\n" + 
+"64c58311-9e32-412b-afff-a9ce0f7886f9\tMulled Wine\tS\tS\tChristmas\n" + 
+"5f4a9c3d-adb6-4f51-a0ec-8ea7f5f67306\tAnchor\tW\tC\t\n" + 
+"be4d84ef-e46b-4f14-876d-fe745d3e0edf\tSea Chart\tW\tU\t\n" + 
+"19f1ec84-87e1-401c-9520-6da5ec8d53df\tOcean Relic\tW\tR\t\n" + 
+"b3098e55-d784-4a87-8bf8-146e5c034ae7\tWater Nymph\tW\tS\t\n" + 
+"8971ac4c-3fcc-4c65-8137-194d63058eaf\tBowl of Worms\tW\tR\tHalloween\n" + 
+"663109a0-1a8c-4a74-811d-3c34bc56ba40\tGravestone\tW\tS\tHalloween\n" + 
+"e4ae44b7-8b12-4efe-a609-38d0592f602a\tSnowballs\tW\tR\tChristmas\n" + 
+"77d2e1a0-cacd-4bd6-8f3d-4ba80964dffe\tSnowman\tW\tS\tChristmas\n" + 
+"cc0f77e9-3830-4b34-b344-c8400d5c42d8\tOld Dice\tN\tC\t\n" + 
+"4ce4e035-b974-47f8-98dc-c8c2eb816604\tStinky Cheese\tN\tC\t\n" + 
+"7c5f4e63-1713-47f6-81e2-789abf9f3315\tGolden Eggs\tN\tU\t\n" + 
+"df98cf4a-3942-47e2-88bf-d45e30f1033c\tRubber Duck\tN\tU\t\n" + 
+"67e38722-f2ce-47a4-8f65-fd6c48d166da\tMagic Beans\tN\tR\t\n" + 
+"49fca34a-46d2-4561-b823-5547e1b030ab\tMythril Skull\tN\tS\t\n" + 
+"92ebf3f5-23f8-4491-ab0b-f6a4f16cd11c\tCandy Corn\tN\tR\tHalloween\n" + 
+"1c9f05f9-e1a2-440a-a59d-20142169aba2\tJack O' Lantern\tN\tS\tHalloween\n" + 
+"c22714d2-249b-4c92-bee5-61ac25cbd3e5\tSanta's Sack\tN\tR\tChristmas\n" + 
+"7f138ee7-d7e4-4e70-983f-d973794fb7b4\tSanta's Hat\tN\tS\tChristmas";
 // bh.TSV[bh.DungeonRepoGID] = "";
-bh.TSV[bh.EffectRepoGID] = "name\talt\teffectType\tvalue\tdescription\nAccuracy Down\t\tStatus\tO0.5T\tThe target's accuracy will be lowered by 20%.\nAccuracy Up\t\tStatus\tD0.5T\tThe target's accuracy will be increased by 20%.\nAttack Down\t\tStatus\tO0.5T\tThe attack of the target will be decreased by a percentage.\nAttack Up\t\tStatus\tD1T\tThe attack of the target will be increased by a percentage.\nAwaken\t\tStatus\tD0.5\tAwakens a Sleeping Hero.\nBackstab\t\tStatus\tO1\tAn UNAWARE target suffers double damage from the attack. Unaware targets are targets under the following status effects: CONFUSE, SLEEP, STUN, BAMBOOZLE\nBamboozle\t\tStatus\tO0.5T\tHas a chance to target the wrong enemy with a small chance to miss completely.\nBleed\t\tStatus\tO2\tDeals an increasing 60% of the cards damage over turns.\nBurn\t\tStatus\tO2\tDeals a decreasing 60% of the cards damage over turns.\nCharm\t\tStatus\tD0.5\tThe caster will Taunt and leave the enemies with Attack Down.\nChill\t\tStatus\tO2\tThe target will be slowed by +1 Turn.\nConfuse\t\tStatus\tO1\tThe targets accuracy will be lowered by 20%.\nCounter\t\tStatus\tD0.5\tIf attacked, the target will deal counter damage.\nCritical\t\tStatus\t\tAdds an additional 50% to the cards value.\nCrush\tShield Break\tStatus\tO1\tThe attack will deal double damage to Shields.\nCure All\t\tStatus\tD2\tCures ALL the following status effects: Posion, Shock, Confuse, Chill, Burn, Bleed\nCure Burn\t\tStatus\tD0.5\tCures Burn status effects.\nCure Chill\t\tStatus\tD0.5\tCures Chill status effects.\nCure Confuse\t\tStatus\tD0.5\tCures Spirit status effects.\nCure Poison\t\tStatus\tD0.5\tCures Earth status effects.\nCure Shock\t\tStatus\tD0.5\tCures Air status effects.\nDefence Down\t\tStatus\tO0.5T\tThe defence of the target will be decreased by a percentage.\nDefence Up\t\tStatus\tD0.5T\tThe defence of the target will be increased by a percentage.\nDrown\t\tStatus\tO2\tDeals an extra 100% of the cards damage after N turns.\nEvade\t\tStatus\tD1T\tThe target has a 50% chance to evade incoming attacks.\nExtend Bleed\t\tStatus\tO0.5\tOn a target bleeding for X damage over Y turns, it will add another X bleed damage over Y turns.\nExtend Burn\t\tStatus\tO0.5\tOn a target burning for X damage over Y turns, it will add another X burn damage over Y turns.\nExtend Poison\t\tStatus\tO0.5\tOn a target poisoned for X damage over Y turns, it will add another X poison damage over Y turns.\nExtend Shock\t\tStatus\tO0.5\tOn a target shocked for X damage over Y turns, it will add another X shock damage over Y turns.\nFlurry\t\tStatus\t\tCasts multiple attacks at the target, each with a chance to miss.\nHaste\t\tStatus\tD3\tThe target will be sped up by +1 Turn.\nImmunity to Accuracy Down\tImmune to Accuracy Down\tStatus\tD0.5T\tImmune to Accuracy Down effect for N turns.\nImmunity to Bleed\tImmune To Bleed\tStatus\tD0.5T\tImmune to Bleed effect for N turns.\nImmunity to Burn\tImmune To Burn\tStatus\tD0.5T\tImmune to Burn effect for N turns.\nImmunity to Charm\tImmune To Charm\tStatus\tD0.5T\tImmune to Charm effect for N turns.\nImmunity to Chill\tImmune To Chill\tStatus\tD0.5T\tImmune to Chill effect for N turns.\nImmunity to Confuse\tImmune To Confuse\tStatus\tD0.5T\tImmune to Confuse effect for N turns.\nImmunity to Poison\tImmune To Poison\tStatus\tD0.5T\tImmune to Poison effect for N turns.\nImmunity to Shock\tImmune To Shock\tStatus\tD0.5T\tImmune to Shock effect for N turns.\nImmunity to Stun\tImmune To Stun\tStatus\tD0.5T\tImmune to Stun effect for N turns.\nInterrupt\t\tStatus\tO2\tInterrupts the target's charge by +1 Turn up to their initial charge value.\nLeech\t\tStatus\tO1\tLeeches 100% of the cards damage immediately.\nLuck Down\t\tStatus\tO0.5T\tPrevents cards to be perked for N turns.\nLuck Up\t\tStatus\tD1T\tCards are always perked for N turns.\nMarked\tMark\tStatus\tO2T\tThe target suffers double damage while marked.\nMax Health Down\tMax HP Down\tStatus\tO0.5T\tThe max health of the target will be lowered by a percentage.\nMax Health Up\tMax HP Up\tStatus\tD0.5T\tThe max health of the target will be increased by a percentage.\nMulti-Target (Ally)\t\tTargeting\t\tThe defence will heal / shield all allied target(s).\nMulti-Target (Enemy)\t\tTargeting\t\tThe attack will deal damage to all enemy target(s).\nPerfect Shot\t\tStatus\tO2\tThe attack will ignore any Accuracy / Agility modifiers.\nPierce\tShield Pierce\tStatus\tO1\tThe attack will go through shields and deal health damage to the target.\nPoison\t\tStatus\tO2\tDeals a flat 60% of the cards damage over turns.\nPrevent Haste\t\tStatus\tO2\tPrevents Haste to be applied on the target for N turns.\nRandom Target\t\tTargeting\t\tThe attack will pick an enemy at random if there is more than one target.\nRecoil\t\tStatus\tD-1\tThe attacker will take some self damage when attacking the target.\nRegen\t\tStatus\t\tRegenerates health over several turns.\nRegen Break\t\tStatus\tO1\tEnds health regeneration.\nReset\t\tStatus\tO2\tFully resets the targets charge back to its initial charge value.\nSap\t\tStatus\tO4\tLeeches 100% of the cards damage over several turns.\nSelf\t\tTargeting\t\tTargets self only.\nShield Bind\t\tStatus\tD1\tAdds 50% of the current shield value to the damage.\nShock\t\tStatus\tO2\tDeals a flat 60% of the cards damage over turns.\nSingle\t\tTargeting\t\tTargets a single target only.\nSleep\t\tStatus\tO2T\tSends the target to sleep, but will be awoken if attacked.\nSlow\t\tStatus\tO1T\tThe target will be slowed by +1 Turn.\nSplash Damage\tSplash\tTargeting\t\t100% damage dealt to the target, with 50% to any adjacent target(s).\nStun\t\tStatus\tO0.5T\tThe target's accuracy will be lowered by 20%.\nTaunt\t\tStatus\t0.5\tAll enemies will only attack the Taunting target.\nDrain Trait\tTrait Down\tStatus\tO1\tDischarge target’s Trait\nTrait Up\t\tStatus\tD4\tCharge target’s Trait\nWarp\tWarped\tStatus\tD1\tThe targets cards will speed up and / or slow down.\nStorm\tWeaken to Air\tStatus\tO1T\tWeakens the target to Air by 50%.\nTerra\tWeaken to Earth\tStatus\tO1T\tWeakens the target to Earth by 50%.\nOil\tWeaken to Fire\tStatus\tO1T\tWeakens the target to Fire by 50%.\nDarken\tWeaken to Spirit\tStatus\tO1T\tWeakens the target to Spirit by 50%.\nWet\tWeaken to Water\tStatus\tO1T\tWeakens the target to Water by 50%";
+bh.TSV[bh.EffectRepoGID] = "name\talt\teffectType\tvalue\tdescription\n" + 
+"Accuracy Down\t\tStatus\tO0.5T\tThe target's accuracy will be lowered by 20%.\n" + 
+"Accuracy Up\t\tStatus\tD0.5T\tThe target's accuracy will be increased by 20%.\n" + 
+"Attack Down\t\tStatus\tO0.5T\tThe attack of the target will be decreased by a percentage.\n" + 
+"Attack Up\t\tStatus\tD1T\tThe attack of the target will be increased by a percentage.\n" + 
+"Awaken\t\tStatus\tD0.5\tAwakens a Sleeping Hero.\n" + 
+"Backstab\t\tStatus\tO1\tAn UNAWARE target suffers double damage from the attack. Unaware targets are targets under the following status effects: CONFUSE, SLEEP, STUN, BAMBOOZLE\n" + 
+"Bamboozle\t\tStatus\tO0.5T\tHas a chance to target the wrong enemy with a small chance to miss completely.\n" + 
+"Bleed\t\tStatus\tO2\tDeals an increasing 60% of the cards damage over turns.\n" + 
+"Burn\t\tStatus\tO2\tDeals a decreasing 60% of the cards damage over turns.\n" + 
+"Charm\t\tStatus\tD0.5\tThe caster will Taunt and leave the enemies with Attack Down.\n" + 
+"Chill\t\tStatus\tO2\tThe target will be slowed by +1 Turn.\n" + 
+"Confuse\t\tStatus\tO1\tThe targets accuracy will be lowered by 20%.\n" + 
+"Counter\t\tStatus\tD0.5\tIf attacked, the target will deal counter damage.\n" + 
+"Critical\t\tStatus\t\tAdds an additional 50% to the cards value.\n" + 
+"Crush\tShield Break\tStatus\tO1\tThe attack will deal double damage to Shields.\n" + 
+"Cure All\t\tStatus\tD2\tCures ALL the following status effects: Posion, Shock, Confuse, Chill, Burn, Bleed\n" + 
+"Cure Burn\t\tStatus\tD0.5\tCures Burn status effects.\n" + 
+"Cure Chill\t\tStatus\tD0.5\tCures Chill status effects.\n" + 
+"Cure Confuse\t\tStatus\tD0.5\tCures Spirit status effects.\n" + 
+"Cure Poison\t\tStatus\tD0.5\tCures Earth status effects.\n" + 
+"Cure Shock\t\tStatus\tD0.5\tCures Air status effects.\n" + 
+"Defence Down\t\tStatus\tO0.5T\tThe defence of the target will be decreased by a percentage.\n" + 
+"Defence Up\t\tStatus\tD0.5T\tThe defence of the target will be increased by a percentage.\n" + 
+"Drown\t\tStatus\tO2\tDeals an extra 100% of the cards damage after N turns.\n" + 
+"Evade\t\tStatus\tD1T\tThe target has a 50% chance to evade incoming attacks.\n" + 
+"Extend Bleed\t\tStatus\tO0.5\tOn a target bleeding for X damage over Y turns, it will add another X bleed damage over Y turns.\n" + 
+"Extend Burn\t\tStatus\tO0.5\tOn a target burning for X damage over Y turns, it will add another X burn damage over Y turns.\n" + 
+"Extend Poison\t\tStatus\tO0.5\tOn a target poisoned for X damage over Y turns, it will add another X poison damage over Y turns.\n" + 
+"Extend Shock\t\tStatus\tO0.5\tOn a target shocked for X damage over Y turns, it will add another X shock damage over Y turns.\n" + 
+"Flurry\t\tStatus\t\tCasts multiple attacks at the target, each with a chance to miss.\n" + 
+"Haste\t\tStatus\tD3\tThe target will be sped up by +1 Turn.\n" + 
+"Immunity to Accuracy Down\tImmune to Accuracy Down\tStatus\tD0.5T\tImmune to Accuracy Down effect for N turns.\n" + 
+"Immunity to Bleed\tImmune To Bleed\tStatus\tD0.5T\tImmune to Bleed effect for N turns.\n" + 
+"Immunity to Burn\tImmune To Burn\tStatus\tD0.5T\tImmune to Burn effect for N turns.\n" + 
+"Immunity to Charm\tImmune To Charm\tStatus\tD0.5T\tImmune to Charm effect for N turns.\n" + 
+"Immunity to Chill\tImmune To Chill\tStatus\tD0.5T\tImmune to Chill effect for N turns.\n" + 
+"Immunity to Confuse\tImmune To Confuse\tStatus\tD0.5T\tImmune to Confuse effect for N turns.\n" + 
+"Immunity to Poison\tImmune To Poison\tStatus\tD0.5T\tImmune to Poison effect for N turns.\n" + 
+"Immunity to Shock\tImmune To Shock\tStatus\tD0.5T\tImmune to Shock effect for N turns.\n" + 
+"Immunity to Stun\tImmune To Stun\tStatus\tD0.5T\tImmune to Stun effect for N turns.\n" + 
+"Interrupt\t\tStatus\tO2\tInterrupts the target's charge by +1 Turn up to their initial charge value.\n" + 
+"Leech\t\tStatus\tO1\tLeeches 100% of the cards damage immediately.\n" + 
+"Luck Down\t\tStatus\tO0.5T\tPrevents cards to be perked for N turns.\n" + 
+"Luck Up\t\tStatus\tD1T\tCards are always perked for N turns.\n" + 
+"Marked\tMark\tStatus\tO2T\tThe target suffers double damage while marked.\n" + 
+"Max Health Down\tMax HP Down\tStatus\tO0.5T\tThe max health of the target will be lowered by a percentage.\n" + 
+"Max Health Up\tMax HP Up\tStatus\tD0.5T\tThe max health of the target will be increased by a percentage.\n" + 
+"Multi-Target (Ally)\t\tTargeting\t\tThe defence will heal / shield all allied target(s).\n" + 
+"Multi-Target (Enemy)\t\tTargeting\t\tThe attack will deal damage to all enemy target(s).\n" + 
+"Perfect Shot\t\tStatus\tO2\tThe attack will ignore any Accuracy / Agility modifiers.\n" + 
+"Pierce\tShield Pierce\tStatus\tO1\tThe attack will go through shields and deal health damage to the target.\n" + 
+"Poison\t\tStatus\tO2\tDeals a flat 60% of the cards damage over turns.\n" + 
+"Prevent Haste\t\tStatus\tO2\tPrevents Haste to be applied on the target for N turns.\n" + 
+"Random Target\t\tTargeting\t\tThe attack will pick an enemy at random if there is more than one target.\n" + 
+"Recoil\t\tStatus\tD-1\tThe attacker will take some self damage when attacking the target.\n" + 
+"Regen\t\tStatus\t\tRegenerates health over several turns.\n" + 
+"Regen Break\t\tStatus\tO1\tEnds health regeneration.\n" + 
+"Reset\t\tStatus\tO2\tFully resets the targets charge back to its initial charge value.\n" + 
+"Sap\t\tStatus\tO4\tLeeches 100% of the cards damage over several turns.\n" + 
+"Self\t\tTargeting\t\tTargets self only.\n" + 
+"Shield Bind\t\tStatus\tD1\tAdds 50% of the current shield value to the damage.\n" + 
+"Shock\t\tStatus\tO2\tDeals a flat 60% of the cards damage over turns.\n" + 
+"Single\t\tTargeting\t\tTargets a single target only.\n" + 
+"Sleep\t\tStatus\tO2T\tSends the target to sleep, but will be awoken if attacked.\n" + 
+"Slow\t\tStatus\tO1T\tThe target will be slowed by +1 Turn.\n" + 
+"Splash Damage\tSplash\tTargeting\t\t100% damage dealt to the target, with 50% to any adjacent target(s).\n" + 
+"Stun\t\tStatus\tO0.5T\tThe target's accuracy will be lowered by 20%.\n" + 
+"Taunt\t\tStatus\t0.5\tAll enemies will only attack the Taunting target.\n" + 
+"Drain Trait\tTrait Down\tStatus\tO1\tDischarge target’s Trait\n" + 
+"Trait Up\t\tStatus\tD4\tCharge target’s Trait\n" + 
+"Warp\tWarped\tStatus\tD1\tThe targets cards will speed up and / or slow down.\n" + 
+"Storm\tWeaken to Air\tStatus\tO1T\tWeakens the target to Air by 50%.\n" + 
+"Terra\tWeaken to Earth\tStatus\tO1T\tWeakens the target to Earth by 50%.\n" + 
+"Oil\tWeaken to Fire\tStatus\tO1T\tWeakens the target to Fire by 50%.\n" + 
+"Darken\tWeaken to Spirit\tStatus\tO1T\tWeakens the target to Spirit by 50%.\n" + 
+"Wet\tWeaken to Water\tStatus\tO1T\tWeakens the target to Water by 50%";
+
 bh.TSV[bh.HeroRepoGID] = "heroGuid\theroName\telementType\tklassType\tabilityGuid\tabilityName\tabilityType\n" + 
 //"air-magic-hero-guid\tAirMage\tA\tMa\tair-magic-trait-guid\tAirMage Trait\tT" + "\n" + 
 //"air-magic-hero-guid\tAirMage\tA\tMa\tair-magic-active-guid\tAirMage Active\tA" + "\n" + 
@@ -48,12 +175,131 @@ bh.TSV[bh.HeroRepoGID] = "heroGuid\theroName\telementType\tklassType\tabilityGui
 "8db9e95c-3850-4337-8027-d4847239d857\tTrix\tE\tMa\t98eb0342-eca2-4c35-a535-07c50467aff6\tSpellbound\tA" + "\n" + 
 "8db9e95c-3850-4337-8027-d4847239d857\tTrix\tE\tMa\tdb847be0-5661-47d8-8bb6-81864049fd3d\tWizardry\tP";
 
+bh.TSV[bh.ItemRepoGID] = "guid\tname\titemType\trarity\telement\n" + 
+"e9b58af4-8ac1-489a-ae13-d5184b61868a\tAir Crystal\tC\tU\tA\n" + 
+//"air-mage-air-rune\tAirMage's Air Rune\tR\tR\tA\n" + 
+"83eec6e9-dae1-42cd-8282-16f16f83381a\tBeetle Juice\tE\tC\tW\n" + 
+"2aca74b8-61d9-483b-aaea-84a2be168fd8\tBlue Jam\tE\tU\tW\n" + 
+"4af653e3-0bd1-4596-9b5d-f271bfd46136\tBrains\tE\tR\tS\n" + 
+"6960b015-604c-4e36-8d79-6e995686db4c\tBree's Earth Rune\tR\tR\tE\n" + 
+"07c45284-b297-4be1-ac8c-d5f031436e55\tBrom's Air Rune\tR\tR\tA\n" + 
+"041891a2-02fd-40b0-b4cb-729f3fe1b1c6\tCharged Ore\tE\tS\tA\n" + 
+"e47dc3e4-f407-42a7-a97d-2c97fdca7999\tCrystals\tE\tR\tN\n" + 
+"d8ac5d66-217b-4b45-956a-92829b12cc5a\tDragon's Breath\tE\tR\tF\n" + 
+"0d0a4bdf-2d57-47be-9d50-447553590b06\tDung Dollop\tE\tC\tE\n" + 
+"c100698f-3a6e-4ea2-8345-79640d75db19\tEarth Crystal\tC\tU\tE\n" + 
+"62a96b32-3069-4b0e-9b5c-61e83be9cd53\tEctoplasm\tE\tR\tS\n" + 
+"55282c6a-bf19-4509-96c0-389fb996ebc4\tEyeballs\tE\tC\tN\n" + 
+"9a56748a-5afd-40c5-a7e4-44b125d3af29\tFergus' Fire Rune\tR\tR\tF\n" + 
+"a07292d6-d403-487b-bcdf-2b5c4abf52aa\tFire Crystal\tC\tU\tF\n" + 
+"ce95fd64-aaa5-4e90-8f4f-06123655c67b\tFireflies\tE\tU\tF\n" + 
+"bcd752b2-bff3-4621-b48e-82ce86d80154\tFrost Bite\tE\tR\tW\n" + 
+"d3230bb1-e06d-44c2-949d-d1f0d1772edb\tGilda's Water Rune\tR\tR\tW\n" + 
+"3d811563-3a20-4146-a644-870877a0a435\tHawkeye's Air Rune\tR\tR\tA\n" + 
+"da8997fb-a571-4797-870c-a3dd03d4cf1b\tHoney\tE\tC\tF\n" + 
+"38bd21f2-a2cd-4c1b-9eaa-e5c3beb0d67d\tInfinity\tE\tR\tN\n" + 
+"3cc591fe-7e7e-4e1a-bce6-712868f16c47\tJinx's Spirit Rune\tR\tR\tS\n" + 
+"975e11e8-386a-41b2-9f9c-0fde5c3d30b1\tKrell's Spirit Rune\tR\tR\tS\n" + 
+"0056de23-a675-49e5-b487-4a5cb7dd81e6\tLeeches\tE\tU\tS\n" + 
+"c3c5f7f7-8ee2-4bc4-a075-ff83afb7c6f8\tLogan's Water Rune\tR\tR\tW\n" + 
+"3ab50e85-9f67-46f4-a247-b6f932774478\tMagma\tE\tR\tF\n" + 
+"4f5c2ba5-e233-4c50-a67f-4c00a513746f\tMarmyte\tE\tU\tN\n" + 
+"319598be-f8ce-41ef-b47c-7b4ba018502f\tMean Spirit\tE\tC\tS\n" + 
+"453f2468-9096-4c6d-acc8-64484b9bead5\tMilk\tE\tU\tN\n" + 
+"5471010c-986c-44f7-9679-72fa5ca3af83\tMiracle Water\tE\tS\tW\n" + 
+"7c583ed2-1169-4fcb-acd0-20538d55be1a\tMonty's Fire Rune\tR\tR\tF\n" + 
+"3847a2fb-0414-4c6c-807b-9d8d6ba1bf60\tOil\tE\tU\tF\n" + 
+"f0eae966-6f19-4e7e-851c-e6819b9b1bda\tOre Particles\tE\tU\tA\n" + 
+"8ee95cbc-9f68-418d-a1d6-b6b5384a579c\tPeg's Water Rune\tR\tR\tW\n" + 
+"d7c4f48a-d0e7-4a07-bfeb-8b10c71b7652\tPhoenix Feather\tE\tS\tF\n" + 
+"8f72a53f-2b3f-49cf-abf0-57eb731a5d37\tPixie Dust\tE\tC\tA\n" + 
+"f10c789e-6a73-4a48-9c39-1afd08d76a79\tRed's Fire Rune\tR\tR\tF\n" + 
+"31c509b2-6e50-4d98-ac47-95ac473ee19a\tSands of Time\tE\tU\tN\n" + 
+"720c5250-4cc6-458d-a7c4-fa2d72029301\tSea Salt\tE\tU\tW\n" + 
+"39a86382-dd9f-426d-a2e1-27da34d8f227\tSnapWeed\tE\tU\tE\n" + 
+"02fe3155-0f41-47a7-af04-50bc31486ba0\tSpindle Eggs\tE\tC\tN\n" + 
+"4526772a-f0cc-4e52-9247-058a62baa9fe\tSpirit Crystal\tC\tU\tS\n" + 
+"9c1436c1-a509-423d-8102-4053cf40b4ba\tSpirit Stone\tE\tS\tS\n" + 
+//"spirit-mage-spirit-rune\tSpiritMight's Spirit Rune\tR\tR\tS\n" + 
+"7a1f5108-748a-44e4-860b-8a3c9c5266f1\tStardust\tE\tR\tA\n" + 
+"b0124bb5-746f-4140-a3ec-73330fdeb956\tStrength Stone\tE\tS\tN\n" + 
+"1a2d1b96-47b2-4e76-8547-ff5cf9ed9f72\tSwamp Spirit\tE\tR\tE\n" + 
+"b2cbfd17-d68c-4e68-9b09-a0e5ece8d861\tThrudd's Earth Rune\tR\tR\tE\n" + 
+"7760d18a-0266-48ea-a843-df3c210cdb33\tTitanium Ore\tE\tR\tA\n" + 
+"113dbfb1-91a4-4771-aead-cf671482b370\tTrix's Earth Rune\tR\tR\tE\n" + 
+"067fb50e-99fb-4fbe-946d-53fe5884d354\tValerian Root\tE\tR\tE\n" + 
+"6fb2726b-674c-42da-a571-010f3b95edd3\tVenom\tE\tU\tE\n" + 
+"f0efc561-7a50-4166-9ae8-eb78722738da\tVital Fluid\tE\tU\tS\n" + 
+"a8460fb6-6c44-4886-b03b-b8f463fd089c\tWater Crystal\tC\tU\tW\n" + 
+"c9b876b5-64fc-423d-b2d0-7c0ca33dc262\tWater Vapour\tE\tR\tW\n" + 
+"d2d3a925-f0f1-4867-9127-fa2eab21b369\tWeeder Seeds\tE\tS\tE\n" + 
+"bd75f1ed-58d9-43eb-8a4a-e6bf135fe336\tZapperball\tE\tU\tA";
 
-bh.TSV[bh.ItemRepoGID] = "guid\tname\titemType\trarity\telement\ne9b58af4-8ac1-489a-ae13-d5184b61868a\tAir Crystal\tC\tU\tA\nair-mage-air-rune\tAirMage's Air Rune\tR\tR\tA\n83eec6e9-dae1-42cd-8282-16f16f83381a\tBeetle Juice\tE\tC\tW\n2aca74b8-61d9-483b-aaea-84a2be168fd8\tBlue Jam\tE\tU\tW\n4af653e3-0bd1-4596-9b5d-f271bfd46136\tBrains\tE\tR\tS\n6960b015-604c-4e36-8d79-6e995686db4c\tBree's Earth Rune\tR\tR\tE\n07c45284-b297-4be1-ac8c-d5f031436e55\tBrom's Air Rune\tR\tR\tA\n041891a2-02fd-40b0-b4cb-729f3fe1b1c6\tCharged Ore\tE\tS\tA\ne47dc3e4-f407-42a7-a97d-2c97fdca7999\tCrystals\tE\tR\tN\nd8ac5d66-217b-4b45-956a-92829b12cc5a\tDragon's Breath\tE\tR\tF\n0d0a4bdf-2d57-47be-9d50-447553590b06\tDung Dollop\tE\tC\tE\nc100698f-3a6e-4ea2-8345-79640d75db19\tEarth Crystal\tC\tU\tE\n62a96b32-3069-4b0e-9b5c-61e83be9cd53\tEctoplasm\tE\tR\tS\n55282c6a-bf19-4509-96c0-389fb996ebc4\tEyeballs\tE\tC\tN\n9a56748a-5afd-40c5-a7e4-44b125d3af29\tFergus' Fire Rune\tR\tR\tF\na07292d6-d403-487b-bcdf-2b5c4abf52aa\tFire Crystal\tC\tU\tF\nce95fd64-aaa5-4e90-8f4f-06123655c67b\tFireflies\tE\tU\tF\nbcd752b2-bff3-4621-b48e-82ce86d80154\tFrost Bite\tE\tR\tW\nd3230bb1-e06d-44c2-949d-d1f0d1772edb\tGilda's Water Rune\tR\tR\tW\n3d811563-3a20-4146-a644-870877a0a435\tHawkeye's Air Rune\tR\tR\tA\nda8997fb-a571-4797-870c-a3dd03d4cf1b\tHoney\tE\tC\tF\n38bd21f2-a2cd-4c1b-9eaa-e5c3beb0d67d\tInfinity\tE\tR\tN\n3cc591fe-7e7e-4e1a-bce6-712868f16c47\tJinx's Spirit Rune\tR\tR\tS\n975e11e8-386a-41b2-9f9c-0fde5c3d30b1\tKrell's Spirit Rune\tR\tR\tS\n0056de23-a675-49e5-b487-4a5cb7dd81e6\tLeeches\tE\tU\tS\nc3c5f7f7-8ee2-4bc4-a075-ff83afb7c6f8\tLogan's Water Rune\tR\tR\tW\n3ab50e85-9f67-46f4-a247-b6f932774478\tMagma\tE\tR\tF\n4f5c2ba5-e233-4c50-a67f-4c00a513746f\tMarmyte\tE\tU\tN\n319598be-f8ce-41ef-b47c-7b4ba018502f\tMean Spirit\tE\tC\tS\n453f2468-9096-4c6d-acc8-64484b9bead5\tMilk\tE\tU\tN\n5471010c-986c-44f7-9679-72fa5ca3af83\tMiracle Water\tE\tS\tW\n7c583ed2-1169-4fcb-acd0-20538d55be1a\tMonty's Fire Rune\tR\tR\tF\n3847a2fb-0414-4c6c-807b-9d8d6ba1bf60\tOil\tE\tU\tF\nf0eae966-6f19-4e7e-851c-e6819b9b1bda\tOre Particles\tE\tU\tA\n8ee95cbc-9f68-418d-a1d6-b6b5384a579c\tPeg's Water Rune\tR\tR\tW\nd7c4f48a-d0e7-4a07-bfeb-8b10c71b7652\tPhoenix Feather\tE\tS\tF\n8f72a53f-2b3f-49cf-abf0-57eb731a5d37\tPixie Dust\tE\tC\tA\nf10c789e-6a73-4a48-9c39-1afd08d76a79\tRed's Fire Rune\tR\tR\tF\n31c509b2-6e50-4d98-ac47-95ac473ee19a\tSands of Time\tE\tU\tN\n720c5250-4cc6-458d-a7c4-fa2d72029301\tSea Salt\tE\tU\tW\n39a86382-dd9f-426d-a2e1-27da34d8f227\tSnapWeed\tE\tU\tE\n02fe3155-0f41-47a7-af04-50bc31486ba0\tSpindle Eggs\tE\tC\tN\n4526772a-f0cc-4e52-9247-058a62baa9fe\tSpirit Crystal\tC\tU\tS\n9c1436c1-a509-423d-8102-4053cf40b4ba\tSpirit Stone\tE\tS\tS\nspirit-mage-spirit-rune\tSpiritMight's Spirit Rune\tR\tR\tS\n7a1f5108-748a-44e4-860b-8a3c9c5266f1\tStardust\tE\tR\tA\nb0124bb5-746f-4140-a3ec-73330fdeb956\tStrength Stone\tE\tS\tN\n1a2d1b96-47b2-4e76-8547-ff5cf9ed9f72\tSwamp Spirit\tE\tR\tE\nb2cbfd17-d68c-4e68-9b09-a0e5ece8d861\tThrudd's Earth Rune\tR\tR\tE\n7760d18a-0266-48ea-a843-df3c210cdb33\tTitanium Ore\tE\tR\tA\n113dbfb1-91a4-4771-aead-cf671482b370\tTrix's Earth Rune\tR\tR\tE\n067fb50e-99fb-4fbe-946d-53fe5884d354\tValerian Root\tE\tR\tE\n6fb2726b-674c-42da-a571-010f3b95edd3\tVenom\tE\tU\tE\nf0efc561-7a50-4166-9ae8-eb78722738da\tVital Fluid\tE\tU\tS\na8460fb6-6c44-4886-b03b-b8f463fd089c\tWater Crystal\tC\tU\tW\nc9b876b5-64fc-423d-b2d0-7c0ca33dc262\tWater Vapour\tE\tR\tW\nd2d3a925-f0f1-4867-9127-fa2eab21b369\tWeeder Seeds\tE\tS\tE\nbd75f1ed-58d9-43eb-8a4a-e6bf135fe336\tZapperball\tE\tU\tA";
-bh.TSV[bh.WildCardRepoGID] = "guid\tname\ncd6b7615-499d-4030-abc2-45e1967e12fa\tCommon\n43e6cd71-565c-4614-a5cb-71c1397ca766\tUncommon\n748bc6f8-017d-44dc-96dc-584424d8e61b\tRare\n82559bae-f2d4-4f65-8aad-c09f6ca469d6\tSuper Rare\n4d752ea8-75cb-4839-886f-8de0ed0c7b71\tLegendary";
+bh.TSV[bh.WildCardRepoGID] = "guid\tname\n" + 
+"cd6b7615-499d-4030-abc2-45e1967e12fa\tCommon\n" + 
+"43e6cd71-565c-4614-a5cb-71c1397ca766\tUncommon\n" + 
+"748bc6f8-017d-44dc-96dc-584424d8e61b\tRare\n" + 
+"82559bae-f2d4-4f65-8aad-c09f6ca469d6\tSuper Rare\n" + 
+"4d752ea8-75cb-4839-886f-8de0ed0c7b71\tLegendary";
 
 // bh.TSV[bh.BattleCardRepoGID] = "";
-bh.TSV[bh.GuildsGID] = "guid\tname\tparent\n04742dbb-9350-42be-ba86-42c1dab7f7da\tBe free\tBe free\n0ec75b29-cc56-480b-81c7-f056dc1c6be0\tDevil Fruits\tDevil Fruits\n9849e62b-a6f7-489e-bb4d-8429d4dd5c60\tElder Blood\tElder Blood\nd95cfe8a-d7d1-40dc-b8cc-ea1920f9dced\tEnigma\tEnigma\nf3801d41-1a53-4d17-9fa0-406a9333501c\tTHE WOLF PACK\tEnigma\na5f87c18-6246-4bc3-aaa6-4aa8227c3be6\tMystery Inc.\tMystery Inc.\nde21ca4c-cb19-460f-9d4d-338e525a0f28\tMeddling Kids\tMystery Inc.\n481e0276-65c7-466a-82f0-adf13fee005f\tNeo TTT\tNeo TTT\n021e8e57-0d25-49e5-88d3-c285d55ac936\tNINTALE\tNeo TTT\ndfb2e2f4-bf69-4fc1-9c8e-98d2352d7af7\tNotOnlyUnderdog\tNotOnlyUnderdog\n7b027812-c1b7-499a-a4c5-617c234d4315\tFrosttiger\tRobin Hood\n6f82a211-1478-43e4-a228-4fc510a4f233\tRobin Hood\tRobin Hood\n0410a7e6-5c36-40bb-a773-877b331eac2c\tAntiquers\tThe βrain\ncbaa83b2-0d72-449c-8e54-cd024611dcfa\tErranti\tThe βrain\n693ea141-6b15-4a07-b87f-87e0e13d723c\tβattle βrain\tThe βrain\nbf20141c-614a-4a6a-b89f-697b99e20372\tβrain Aneurysm\tThe βrain\n105d931c-8446-4c34-bc68-cddc9158dcdc\tβrain Cell\tThe βrain\n6385f9be-d7c7-432a-a8f7-3c9f6117710c\tβrain Damage\tThe βrain\nf02d0163-31d4-4215-b524-b8c8adc5aceb\tβrain Donor\tThe βrain\n1eda45b6-d9f6-4742-bdeb-8f8a86b1a2eb\tβrain Power\tThe βrain\n68df7d8b-ed2f-46f4-a43f-6c0a48c6a404\tβrain Scan\tThe βrain\nad5ba40e-f7db-4789-95ea-f97ddacc2546\tβrain Storm\tThe βrain\nade5db85-2fdf-4f54-aaf8-44e9d62caec1\tβrain δead\tThe βrain\n04299565-c1d0-42f2-a439-8dbce785a31b\tBattlehandlers\tUmbrella Corp\n8c750217-d81e-4123-8b23-a343468c50c6\tCode *Red*\tUmbrella Corp\n12313721-e6f6-45b0-a5af-a68628ac46ea\tFade to Black\tUmbrella Corp\n12313721-e6f6-45b0-a5af-a68628ac46ea\tFade to Black\tUmbrella Corp\n6270576a-d335-4ed9-ae4e-9537baf90638\tFun Not Chore\tUmbrella Corp\n998abc8b-7057-48e6-ac24-4d1897e734e6\tGray Soldiers\tUmbrella Corp\n75572f2d-cd03-4995-b92b-374f4e3da8b5\tHoney Badger\tUmbrella Corp\nf3519726-c242-4219-bd7c-dfa0ceffccc9\tKotA\tUmbrella Corp\n9595e6af-59d5-434b-b966-6fcaaad7657e\tPhoenix Û\tUmbrella Corp\ndaf8b2a5-580c-415a-abab-ac3491174ca3\tProject Cadmus\tUmbrella Corp\n3b7cc239-5dc8-4121-9780-cdb302d8a86c\tShadows of Immor\tUmbrella Corp\n656adb84-7ab0-4dc6-a34d-702aef1b4978\tShield Warriors\tUmbrella Corp\n60cbb9d4-3873-4fcc-af35-e7b54e53a961\tSilversky\tUmbrella Corp\nce43e434-5cd4-40b8-beb0-f196133aef3a\tTheCasualÜndead\tUmbrella Corp\n340ae1cb-63e0-460d-a367-baf5555c9a7b\t顶顶魔\tUmbrella Corp\n49be93a5-ea9c-4920-945b-dc42f228c26b\tUnderdog Aphotic\tUnderdog\n580a3649-5b8a-453c-b09c-acf93038de6f\tUnderdog Chess\tUnderdog\n7b762ccd-ee0b-49c1-83f9-d4f26c9cbf9b\tUnderdog Crown\tUnderdog\n3e98a224-82ee-48f9-bf18-499d2a5ccdf2\tUnderdog Fury\tUnderdog\n5481dfee-fa20-4fb4-bbbe-4d30daf4a7b5\tUnderdog Legion\tUnderdog\nbbd78987-57e8-4f02-a4ff-31c58375ef98\tUnderdog Oath\tUnderdog\nf026bc54-af89-4c9a-baad-c7cb79f77d09\tUnderdog Omerta\tUnderdog\nc841fee3-035e-44a0-b55f-6a1451ef9e1f\tUnderdog Phalanx\tUnderdog\ncd01fc38-4081-4bfa-b984-27574ed21ed2\tUnderdog SuPrize\tUnderdog\n8a226331-a44c-4087-95d9-dffab98ce056\tΨnquisition\tΨnquisition\n290a1730-c2e9-4494-ad33-38cf6e14bb92\tБез Паники\tБез Паники\nf061f865-569d-46a2-b84f-576bc45573e9\t休闲会所\t休闲会所\n301926e4-e8ba-4434-bf9f-6f9ad51a518d\t我们就是那么屌\t我们就是那么屌\n29d06374-7f6f-49f7-b3f7-cd546783e9cd\t星星之火\t星星之火\nd3cd38e6-fd63-48f6-8209-643e58b6bed2\t星火兔司机\t星火兔司机\nb41c3db5-bd2b-4787-9040-7d30854a2ea6\t星火盟\t星火盟\n5c88da02-b3aa-4474-8ce5-3e25c24f1d89\t粤B大爆炸\t粤B大爆炸";
+bh.TSV[bh.GuildsGID] = "guid\tname\tparent\n" + 
+"04742dbb-9350-42be-ba86-42c1dab7f7da\tBe free\tBe free\n" + 
+"0ec75b29-cc56-480b-81c7-f056dc1c6be0\tDevil Fruits\tDevil Fruits\n" + 
+"9849e62b-a6f7-489e-bb4d-8429d4dd5c60\tElder Blood\tElder Blood\n" + 
+"d95cfe8a-d7d1-40dc-b8cc-ea1920f9dced\tEnigma\tEnigma\n" + 
+"f3801d41-1a53-4d17-9fa0-406a9333501c\tTHE WOLF PACK\tEnigma\n" + 
+"a5f87c18-6246-4bc3-aaa6-4aa8227c3be6\tMystery Inc.\tMystery Inc.\n" + 
+"de21ca4c-cb19-460f-9d4d-338e525a0f28\tMeddling Kids\tMystery Inc.\n" + 
+"481e0276-65c7-466a-82f0-adf13fee005f\tNeo TTT\tNeo TTT\n" + 
+"021e8e57-0d25-49e5-88d3-c285d55ac936\tNINTALE\tNeo TTT\n" + 
+"dfb2e2f4-bf69-4fc1-9c8e-98d2352d7af7\tNotOnlyUnderdog\tNotOnlyUnderdog\n" + 
+"7b027812-c1b7-499a-a4c5-617c234d4315\tFrosttiger\tRobin Hood\n" + 
+"6f82a211-1478-43e4-a228-4fc510a4f233\tRobin Hood\tRobin Hood\n" + 
+"0410a7e6-5c36-40bb-a773-877b331eac2c\tAntiquers\tThe βrain\n" + 
+"cbaa83b2-0d72-449c-8e54-cd024611dcfa\tErranti\tThe βrain\n" + 
+"693ea141-6b15-4a07-b87f-87e0e13d723c\tβattle βrain\tThe βrain\n" + 
+"bf20141c-614a-4a6a-b89f-697b99e20372\tβrain Aneurysm\tThe βrain\n" + 
+"105d931c-8446-4c34-bc68-cddc9158dcdc\tβrain Cell\tThe βrain\n" + 
+"6385f9be-d7c7-432a-a8f7-3c9f6117710c\tβrain Damage\tThe βrain\n" + 
+"f02d0163-31d4-4215-b524-b8c8adc5aceb\tβrain Donor\tThe βrain\n" + 
+"1eda45b6-d9f6-4742-bdeb-8f8a86b1a2eb\tβrain Power\tThe βrain\n" + 
+"68df7d8b-ed2f-46f4-a43f-6c0a48c6a404\tβrain Scan\tThe βrain\n" + 
+"ad5ba40e-f7db-4789-95ea-f97ddacc2546\tβrain Storm\tThe βrain\n" + 
+"ade5db85-2fdf-4f54-aaf8-44e9d62caec1\tβrain δead\tThe βrain\n" + 
+"04299565-c1d0-42f2-a439-8dbce785a31b\tBattlehandlers\tUmbrella Corp\n" + 
+"8c750217-d81e-4123-8b23-a343468c50c6\tCode *Red*\tUmbrella Corp\n" + 
+"12313721-e6f6-45b0-a5af-a68628ac46ea\tFade to Black\tUmbrella Corp\n" + 
+"12313721-e6f6-45b0-a5af-a68628ac46ea\tFade to Black\tUmbrella Corp\n" + 
+"6270576a-d335-4ed9-ae4e-9537baf90638\tFun Not Chore\tUmbrella Corp\n" + 
+"998abc8b-7057-48e6-ac24-4d1897e734e6\tGray Soldiers\tUmbrella Corp\n" + 
+"75572f2d-cd03-4995-b92b-374f4e3da8b5\tHoney Badger\tUmbrella Corp\n" + 
+"f3519726-c242-4219-bd7c-dfa0ceffccc9\tKotA\tUmbrella Corp\n" + 
+"9595e6af-59d5-434b-b966-6fcaaad7657e\tPhoenix Û\tUmbrella Corp\n" + 
+"daf8b2a5-580c-415a-abab-ac3491174ca3\tProject Cadmus\tUmbrella Corp\n" + 
+"3b7cc239-5dc8-4121-9780-cdb302d8a86c\tShadows of Immor\tUmbrella Corp\n" + 
+"656adb84-7ab0-4dc6-a34d-702aef1b4978\tShield Warriors\tUmbrella Corp\n" + 
+"60cbb9d4-3873-4fcc-af35-e7b54e53a961\tSilversky\tUmbrella Corp\n" + 
+"ce43e434-5cd4-40b8-beb0-f196133aef3a\tTheCasualÜndead\tUmbrella Corp\n" + 
+"340ae1cb-63e0-460d-a367-baf5555c9a7b\t顶顶魔\tUmbrella Corp\n" + 
+"49be93a5-ea9c-4920-945b-dc42f228c26b\tUnderdog Aphotic\tUnderdog\n" + 
+"580a3649-5b8a-453c-b09c-acf93038de6f\tUnderdog Chess\tUnderdog\n" + 
+"7b762ccd-ee0b-49c1-83f9-d4f26c9cbf9b\tUnderdog Crown\tUnderdog\n" + 
+"3e98a224-82ee-48f9-bf18-499d2a5ccdf2\tUnderdog Fury\tUnderdog\n" + 
+"5481dfee-fa20-4fb4-bbbe-4d30daf4a7b5\tUnderdog Legion\tUnderdog\n" + 
+"bbd78987-57e8-4f02-a4ff-31c58375ef98\tUnderdog Oath\tUnderdog\n" + 
+"f026bc54-af89-4c9a-baad-c7cb79f77d09\tUnderdog Omerta\tUnderdog\n" + 
+"c841fee3-035e-44a0-b55f-6a1451ef9e1f\tUnderdog Phalanx\tUnderdog\n" + 
+"cd01fc38-4081-4bfa-b984-27574ed21ed2\tUnderdog SuPrize\tUnderdog\n" + 
+"8a226331-a44c-4087-95d9-dffab98ce056\tΨnquisition\tΨnquisition\n" + 
+"290a1730-c2e9-4494-ad33-38cf6e14bb92\tБез Паники\tБез Паники\n" + 
+"f061f865-569d-46a2-b84f-576bc45573e9\t休闲会所\t休闲会所\n" + 
+"301926e4-e8ba-4434-bf9f-6f9ad51a518d\t我们就是那么屌\t我们就是那么屌\n" + 
+"29d06374-7f6f-49f7-b3f7-cd546783e9cd\t星星之火\t星星之火\n" + 
+"d3cd38e6-fd63-48f6-8209-643e58b6bed2\t星火兔司机\t星火兔司机\n" + 
+"b41c3db5-bd2b-4787-9040-7d30854a2ea6\t星火盟\t星火盟\n" + 
+"5c88da02-b3aa-4474-8ce5-3e25c24f1d89\t粤B大爆炸\t粤B大爆炸";
+
 bh.TSV[bh.MonthlyRepoGID] = `month	card
 1	Fuming Bunny
 2	Acid Splash
@@ -97,6 +343,7 @@ bh.TSV[bh.MonthlyRepoGID] = `month	card
 40	The Kraken
 41	Cleansing Chalice
 42	Healing Splash`;
+
 bh.TSV[bh.GuildWarGID] = `week	start	guid	name	bragGuid	bragCondition	bragConditionGuid	srGuid	lGuid
 173	2019-04-24		Uber Cornholio	186a2925-293e-4ad0-8a0c-08f73843ab5b	No Heal Cards		1ab4c6c3-bded-4036-ab01-4ecbc900e41e	5aa5430e-2480-467c-ac9f-8deab92911e0
 174	2019-05-01		Elven Precision	256415a4-4199-41f2-b59e-da668b8ff419	Earth Damage		8dd624a3-4985-4ca1-ba13-baffb9565992	a1801021-06e9-4966-b40e-e39f1fbcfa12
