@@ -342,18 +342,18 @@ bh.TSV[bh.MonthlyRepoGID] = `month	card
 40	The Kraken
 41	Cleansing Chalice
 42	Healing Splash
-43 Hard Luck
-44 Fellcrest Lullaby
-45 Rain of Fire
-46 Monk-Fu
-47 Espresso Shot
-48 Fairy Shield
-49 Pumpkin Field
-50 Candy Cauldron
-51 Hoist the Colours
-52 Dragonslayer
-53 Backstab
-54 Lava Wave`;
+43	Hard Luck
+44	Fellcrest Lullaby
+45	Rain of Fire
+46	Monk-Fu
+47	Espresso Shot
+48	Fairy Shield
+49	Pumpkin Field
+50	Candy Cauldron
+51	Hoist the Colours
+52	Dragonslayer
+53	Backstab
+54	Lava Wave`;
 
 bh.TSV[bh.GuildWarGID] = `week	start	guid	name	bragGuid	bragCondition	bragConditionGuid	srGuid	lGuid
 1	2021-01-01		Dragon Skin	3fcb2772-a361-4aa4-b24b-41eedf395490	10 Turns		a7a0d315-74cc-4df2-956e-e892a87201b8	b513207a-8eff-4c8e-9170-a8921fc503a6
