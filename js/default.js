@@ -2004,8 +2004,9 @@ var bh;
                 return (
                     this._init ||
                         (this._init = new Promise((resolvefn) => {
-                            let useCache = !0 === bh.USE_CACHE_OVERRIDE || this.useCache,
-                                cached = (bh.TSV || {})[String(this.gid || this.id)];
+                            //let useCache = !0 === bh.USE_CACHE_OVERRIDE || this.useCache;
+                            let useCache = true;
+                            let cached = (bh.TSV || {})[String(this.gid || this.id)];
                             cached && useCache
                                 ? (console.log(`not fetching ${this.constructor.name} from google`), this.resolveTsv(cached, resolvefn))
                                 : this.id && this.gid && "number" == typeof this.gid
