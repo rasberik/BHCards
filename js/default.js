@@ -4181,36 +4181,36 @@ var bh;
                         bh.ItemType.Crystal,
                         "crystals",
                         "Neutral"
-                    )}\n\t\t\t\t</div><br/>\n" + "\t\t\t\t<div class="bs-btn-group bs-btn-group-xs jai-hud-inventory-buttons text-center">\n" + 
-                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="0">\n" + 
-                    "\t\t\t\t\t<span class="evo-star">☆</span>\n" + 
-                    "\t\t\t\t\t</button>\n" + 
-                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="1">\n" + 
-                    "\t\t\t\t\t<span class="evo-star">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;">☆</span>\n" + 
-                    "\t\t\t\t\t</button>\n" + 
-                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="2">\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;top:1px;">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:1px;">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-23px;top:-3px;">☆</span>\n" + 
-                    "\t\t\t\t\t</button>\n" + 
-                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="3">\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;top:1px;">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:1px;">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-18px;top:-3px;">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-39px;top:-3px;">☆</span>\n" + 
-                    "\t\t\t\t\t</button>\n" + 
-                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="4">\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;top:2px;">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:2px;">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-17px;top:-1px;">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-40px;top:-1px;">☆</span>\n" + 
-                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-48px;top:-4px;">☆</span>\n" + 
-                    "\t\t\t\t\t</button>\n" + 
-                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-type" data-type="OtherInfo">?</button>\n" + 
-                    "\t\t\t\t</div>\n" + 
-                    "\t\t\t\t<div class="bs-btn-group bs-btn-group-xs jai-hud-inventory-buttons text-center">\n" + 
-                    "\t\t\t\t\t${inventoryButton(
+                    )}\n\t\t\t\t</div><br/>\n` + `\t\t\t\t<div class="bs-btn-group bs-btn-group-xs jai-hud-inventory-buttons text-center">\n` + 
+                    `\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="0">\n` + 
+                    `\t\t\t\t\t<span class="evo-star">☆</span>\n` + 
+                    `\t\t\t\t\t</button>\n` + 
+                    `\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="1">\n` + 
+                    `\t\t\t\t\t<span class="evo-star">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;">☆</span>\n` + 
+                    `\t\t\t\t\t</button>\n` + 
+                    `\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="2">\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;top:1px;">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:1px;">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-23px;top:-3px;">☆</span>\n` + 
+                    `\t\t\t\t\t</button>\n` + 
+                    `\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="3">\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;top:1px;">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:1px;">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-18px;top:-3px;">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-39px;top:-3px;">☆</span>\n` + 
+                    `\t\t\t\t\t</button>\n` + 
+                    `\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="4">\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;top:2px;">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:2px;">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-17px;top:-1px;">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-40px;top:-1px;">☆</span>\n` + 
+                    `\t\t\t\t\t<span class="evo-star" style="position:relative;left:-48px;top:-4px;">☆</span>\n` + 
+                    `\t\t\t\t\t</button>\n` + 
+                    `\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-type" data-type="OtherInfo">?</button>\n` + 
+                    `\t\t\t\t</div>\n` + 
+                    `\t\t\t\t<div class="bs-btn-group bs-btn-group-xs jai-hud-inventory-buttons text-center">\n` + 
+                    `\t\t\t\t\t${inventoryButton(
                         "type",
                         "BoosterCard",
                         "misc",
