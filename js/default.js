@@ -891,7 +891,7 @@ var bh;
                             runesOwned = (rune && rune.count) || 0;
 
 
-                        console.log(me.inventory.find((item) => item.isRune && this.matchesHero(bh.data.HeroRepo.find(item.name.split("'")[0]))));
+                       //console.log(me.inventory.find((item) => item.isRune && this.matchesHero(bh.data.HeroRepo.find(item.name.split("'")[0]))));
                         runesNeeded && rune && (html += bh.PlayerInventoryItem.toRowHtml(rune, runesOwned, runesNeeded));
                         let crystalsNeeded = bh.data.calcMaxCrystalsNeeded(this.playerCard, this.evoLevel),
                             crystal = me.inventory.find((item) => item.isCrystal && this.elementType == item.elementType),
@@ -3207,7 +3207,7 @@ var bh;
                 let battlecardsSortTags = ["rarity-evo-name", "rarity-name-evo", "name-rarity-evo"];
                 function sortBattleCardsByTag(battleCards, sortTag = bh.utils.getFromStorage("BH-HUD-BattlecardsSortTag") || "rarity-evo-name") {
                     let sortFn = "rarity-evo-name" == sortTag ? bh.utils.sort.byRarityThenEvoLevelThenName : "rarity-name-evo" == sortTag ? bh.utils.sort.byRarityThenNameThenEvoLevel : bh.utils.sort.byNameThenRarityThenEvo;
-                    return battleCards.sort(sortFn);
+                    return battleCards?.sort(sortFn);
                 }
                 function sortBattleCards(playerGuid) {
                     let container = $(`div.jai-hud-inventory-items-container.battlecards[data-player-guid="${playerGuid}"]`).empty(),
@@ -4180,7 +4180,36 @@ var bh;
                         bh.ItemType.Crystal,
                         "crystals",
                         "Neutral"
-                    )}\n\t\t\t\t</div><br/>\n\t\t\t\t<div class="bs-btn-group bs-btn-group-xs jai-hud-inventory-buttons text-center">\n\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="0">\n\t\t\t\t\t<span class="evo-star">â˜†</span>\n\t\t\t\t\t</button>\n\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="1">\n\t\t\t\t\t<span class="evo-star">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;">â˜†</span>\n\t\t\t\t\t</button>\n\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="2">\n\t\t\t\t\t<span class="evo-star" style="position:relative;top:1px;">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:1px;">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-23px;top:-3px;">â˜†</span>\n\t\t\t\t\t</button>\n\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="3">\n\t\t\t\t\t<span class="evo-star" style="position:relative;top:1px;">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:1px;">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-18px;top:-3px;">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-39px;top:-3px;">â˜†</span>\n\t\t\t\t\t</button>\n\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="4">\n\t\t\t\t\t<span class="evo-star" style="position:relative;top:2px;">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:2px;">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-17px;top:-1px;">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-40px;top:-1px;">â˜†</span>\n\t\t\t\t\t<span class="evo-star" style="position:relative;left:-48px;top:-4px;">â˜†</span>\n\t\t\t\t\t</button>\n\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-type" data-type="OtherInfo">?</button>\n\t\t\t\t</div>\n\t\t\t\t<div class="bs-btn-group bs-btn-group-xs jai-hud-inventory-buttons text-center">\n\t\t\t\t\t${inventoryButton(
+                    )}\n\t\t\t\t</div><br/>\n" + "\t\t\t\t<div class="bs-btn-group bs-btn-group-xs jai-hud-inventory-buttons text-center">\n" + 
+                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="0">\n" + 
+                    "\t\t\t\t\t<span class="evo-star">☆</span>\n" + 
+                    "\t\t\t\t\t</button>\n" + 
+                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="1">\n" + 
+                    "\t\t\t\t\t<span class="evo-star">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;">☆</span>\n" + 
+                    "\t\t\t\t\t</button>\n" + 
+                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="2">\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;top:1px;">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:1px;">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-23px;top:-3px;">☆</span>\n" + 
+                    "\t\t\t\t\t</button>\n" + 
+                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="3">\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;top:1px;">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:1px;">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-18px;top:-3px;">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-39px;top:-3px;">☆</span>\n" + 
+                    "\t\t\t\t\t</button>\n" + 
+                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-rarity" data-rarity="4">\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;top:2px;">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-5px;top:2px;">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-17px;top:-1px;">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-40px;top:-1px;">☆</span>\n" + 
+                    "\t\t\t\t\t<span class="evo-star" style="position:relative;left:-48px;top:-4px;">☆</span>\n" + 
+                    "\t\t\t\t\t</button>\n" + 
+                    "\t\t\t\t\t<button class="bs-btn bs-btn-default jai-hud-button" type="button" data-action="toggle-type" data-type="OtherInfo">?</button>\n" + 
+                    "\t\t\t\t</div>\n" + 
+                    "\t\t\t\t<div class="bs-btn-group bs-btn-group-xs jai-hud-inventory-buttons text-center">\n" + 
+                    "\t\t\t\t\t${inventoryButton(
                         "type",
                         "BoosterCard",
                         "misc",
