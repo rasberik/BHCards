@@ -267,21 +267,20 @@ bh.TSV[bh.GuildsGID] = "guid\tname\tparent\n" +
 "68df7d8b-ed2f-46f4-a43f-6c0a48c6a404\tβrain Scan\tThe βrain\n" + 
 "ad5ba40e-f7db-4789-95ea-f97ddacc2546\tβrain Storm\tThe βrain\n" + 
 "ade5db85-2fdf-4f54-aaf8-44e9d62caec1\tβrain δead\tThe βrain\n" + 
-"04299565-c1d0-42f2-a439-8dbce785a31b\tBattlehandlers\tUmbrella Corp\n" + 
-"8c750217-d81e-4123-8b23-a343468c50c6\tCode *Red*\tUmbrella Corp\n" + 
-"12313721-e6f6-45b0-a5af-a68628ac46ea\tFade to Black\tUmbrella Corp\n" + 
-"12313721-e6f6-45b0-a5af-a68628ac46ea\tFade to Black\tUmbrella Corp\n" + 
-"6270576a-d335-4ed9-ae4e-9537baf90638\tFun Not Chore\tUmbrella Corp\n" + 
-"998abc8b-7057-48e6-ac24-4d1897e734e6\tGray Soldiers\tUmbrella Corp\n" + 
-"75572f2d-cd03-4995-b92b-374f4e3da8b5\tHoney Badger\tUmbrella Corp\n" + 
-"f3519726-c242-4219-bd7c-dfa0ceffccc9\tKotA\tUmbrella Corp\n" + 
-"9595e6af-59d5-434b-b966-6fcaaad7657e\tPhoenix Û\tUmbrella Corp\n" + 
-"daf8b2a5-580c-415a-abab-ac3491174ca3\tProject Cadmus\tUmbrella Corp\n" + 
-"3b7cc239-5dc8-4121-9780-cdb302d8a86c\tShadows of Immor\tUmbrella Corp\n" + 
-"656adb84-7ab0-4dc6-a34d-702aef1b4978\tShield Warriors\tUmbrella Corp\n" + 
-"60cbb9d4-3873-4fcc-af35-e7b54e53a961\tSilversky\tUmbrella Corp\n" + 
-"ce43e434-5cd4-40b8-beb0-f196133aef3a\tTheCasualÜndead\tUmbrella Corp\n" + 
-"340ae1cb-63e0-460d-a367-baf5555c9a7b\t顶顶魔\tUmbrella Corp\n" + 
+"04299565-c1d0-42f2-a439-8dbce785a31b\tBattlehandlers\tThe Black Flag\n" + 
+"8c750217-d81e-4123-8b23-a343468c50c6\tCode *Red*\tThe Black Flag\n" + 
+"12313721-e6f6-45b0-a5af-a68628ac46ea\tFade to Black\tThe Black Flag\n" + 
+"12313721-e6f6-45b0-a5af-a68628ac46ea\tRedbird Raiders\tThe Black Flag\n" + 
+"6270576a-d335-4ed9-ae4e-9537baf90638\tFun Not Chore\tThe Black Flag\n" + 
+"998abc8b-7057-48e6-ac24-4d1897e734e6\tGray Soldiers\tThe Black Flag\n" + 
+"75572f2d-cd03-4995-b92b-374f4e3da8b5\tHoney Badger\tThe Black Flag\n" + 
+"f3519726-c242-4219-bd7c-dfa0ceffccc9\tKotA\tThe Black Flag\n" + 
+"9595e6af-59d5-434b-b966-6fcaaad7657e\tPhoenix Û\tThe Black Flag\n" + 
+"daf8b2a5-580c-415a-abab-ac3491174ca3\tProject Cadmus\tThe Black Flag\n" + 
+"3b7cc239-5dc8-4121-9780-cdb302d8a86c\tShadows of Immor\tThe Black Flag\n" + 
+"656adb84-7ab0-4dc6-a34d-702aef1b4978\tShield Warriors\tThe Black Flag\n" + 
+"60cbb9d4-3873-4fcc-af35-e7b54e53a961\tSilversky\tThe Black Flag\n" + 
+"ce43e434-5cd4-40b8-beb0-f196133aef3a\tTheCasualÜndead\tThe Black Flag\n" + 
 "49be93a5-ea9c-4920-945b-dc42f228c26b\tUnderdog Aphotic\tUnderdog\n" + 
 "580a3649-5b8a-453c-b09c-acf93038de6f\tUnderdog Chess\tUnderdog\n" + 
 "7b762ccd-ee0b-49c1-83f9-d4f26c9cbf9b\tUnderdog Crown\tUnderdog\n" + 
@@ -342,44 +341,71 @@ bh.TSV[bh.MonthlyRepoGID] = `month	card
 39	Peace Pipe
 40	The Kraken
 41	Cleansing Chalice
-42	Healing Splash`;
+42	Healing Splash
+43 Hard Luck
+44 Fellcrest Lullaby
+45 Rain of Fire
+46 Monk-Fu
+47 Espresso Shot
+48 Fairy Shield
+49 Pumpkin Field
+50 Candy Cauldron
+51 Hoist the Colours
+52 Dragonslayer
+53 Backstab
+54 Lava Wave`;
 
 bh.TSV[bh.GuildWarGID] = `week	start	guid	name	bragGuid	bragCondition	bragConditionGuid	srGuid	lGuid
-173	2019-04-24		Uber Cornholio	186a2925-293e-4ad0-8a0c-08f73843ab5b	No Heal Cards		1ab4c6c3-bded-4036-ab01-4ecbc900e41e	5aa5430e-2480-467c-ac9f-8deab92911e0
-174	2019-05-01		Elven Precision	256415a4-4199-41f2-b59e-da668b8ff419	Earth Damage		8dd624a3-4985-4ca1-ba13-baffb9565992	a1801021-06e9-4966-b40e-e39f1fbcfa12
-175	2019-05-08		Ice Bolt	ca151f04-9d1d-44eb-b3e2-6e8ab1a0c99d	Single Target		ce1107e8-255b-4e83-80c7-5bfe0bfdb0d8	62459f34-8a18-455e-b663-1831af291290
-176	2019-05-15		Scorching Flames	e169a478-0a5c-40e6-abfd-b5fbd1d0215c	Kill with Burn		cdb10572-30e7-483d-a2a8-c6e09e0721c1	cbcd31b7-b8da-418b-91ec-fa0847b43ff7
-177	2019-05-22		Shield of the Nature	c7dbcfd4-eb5d-455f-8388-19c44e179fae	Skill Heroes		1cf47f00-bddb-4cf9-9565-86bf7e9b2d3f	3f34883c-4b61-4878-bcb6-df48dfe3c38e
-178	2019-05-29		Monster Juice	e09853ea-7de8-409e-9629-b27688f07d79	20 Turns		7f311ce2-4cfb-483e-a7c4-0e58ac61b767	7d1e6569-8639-4a10-85e3-69b9c137af4c
-179	2019-06-05		Ninja Grenade	af9c6f27-b21f-4915-92ac-0537d2bf8ace	Multi/Splash		79a2c77f-042d-431a-abdf-2516ffc4dfb4	ebb9095f-2947-47db-b8fb-5bb92017366b
-180	2019-06-12		Pyro Dagger	b1a7c1a4-6137-45da-a85c-c53b631d2be1	No Duplicates		6c56e91f-996b-4a0c-ae27-f407a3c70906	dd0eac87-af34-4a05-86a4-2ba1ae2b07d2
-181	2019-06-19		Dagger of Truth	52bc6c8e-8d0d-4d00-ab2b-dc3e1eb8b1fd	10 Turns		31c45ce0-b7e2-4db4-9065-288824863321	dbba92bd-0568-487c-b83b-65ddeb94594a
-182	2019-06-26		Fafnir's Blood	c7e7f45c-61e6-42be-b9e2-4abebfec4ff4	Might Heroes		5b04839c-7165-4154-8f2b-d5b442027bba	d7da90d4-51b4-4d2e-8a73-45b7fcfc37f4
-183	2019-07-03		Pyroclastic Strike	780ba3a6-35ca-461c-89ab-2e575e59e257	Kill with Burn		1abf0b62-59e3-4505-8468-53a6f1cc8524	578ba7f1-4c85-4c24-bae3-857aad1e2b92
-184	2019-07-10		Toxic Bolt	9dd77979-074a-4c74-baf6-812433170d8d	80% Health		a064b665-17bd-420e-92bd-8a67305cab61	b4359627-35a3-4b5f-baa6-fefb355b1d88
-185	2019-07-17	56f92dd1-72d1-42df-9db4-fd70755f76b2	Hex	704f66dd-5c3d-4c1b-a880-f135e228e9b2	Elementally Weak		51f5bac1-6c8a-45ca-8014-054937b0ebef	a25db2b2-6b33-42bc-89e3-eeb2bf14a472
-186	2019-07-24		Wind Dart	6d954303-3327-48cb-818a-b760a9dac770	Air Damage		4b81cc0b-8c30-4140-bf51-80f2a9fcd9ae	4b356940-4865-4a0e-ae26-80baad1da720
-187	2019-07-31		Witchcraft	843d7cf7-29f6-4885-856a-4844a43df75d	Single Target		e4588d59-61f6-4980-a28e-c1a65a31041f	71b87e7e-1c33-4e5a-bb2b-163a870f6088
-188	2019-08-07		Ascetic Lesson	f5f5a05b-4afa-4c81-a380-579cec8f2421	Magic Heroes		5f9b589c-644a-4cae-a23f-b09697485dcd	6edf4332-68b9-45b4-982f-90ad2f7e4eb4
-189	2019-08-14		Blazing Ray	04f4aa00-1fd2-4377-8489-c576dddb3d32	No Heal Cards		645927d5-f4a4-46b5-ab9f-09c91a6cc271	d08a2a25-dd96-4582-91c9-ac3111762b4b
-190	2019-08-21		Cornholio	40f6062d-5ba2-4cf8-ab7d-5a25f920fb56	Earth Damage		2b4d3c80-9cc3-4a5f-8603-4afca8b8d66f	fd1f7c8c-8d75-4bd5-9fdf-90b797d9ccce
-191	2019-08-28		Salamander Skin	9e9043da-49b8-4f8b-82fa-6fa1c7958504	10 Turns		56591386-7f84-4f5d-aaa4-52e97580dfc4	15be7700-071e-48b8-a076-f38b046c5837
-192	2019-09-04		Whispering Blade	1ee64443-c230-400c-8835-6c23f870886e	Skill Heroes		66288279-e568-492a-a995-803371b38d83	88b3d52e-2ee7-4baf-87da-7acb140dbf14
-193	2019-09-11		Great Ball of Fire	c71682e3-3566-4b6b-a510-57469aaaf5ec	Kill with Burn		9ac1fc03-4f03-4431-97b8-51a95f5f97c3	93a20334-7d59-47c7-93d3-9c668c1fcb0c
-194	2019-09-18		Vigilant Shield	1631a55f-87af-499a-8a40-f99d675fe9f9	10 Turns		253c3d95-e2b4-41b9-ab28-c20e57718957	4678b030-0f94-4acf-bc8e-75ceab34cc79
-195	2019-09-25		Mark of Vengeance	6e794567-936c-4fd5-b733-1f9cb6a41c16	Single Target		2d217ee9-ed70-457c-8f6c-9d72ee05914d	9347549b-505a-42b6-92e7-050a4c903e56
-196	2019-10-02		Perfect Cut	319f2fff-3c99-4c18-87fc-570733762a21	No Duplicates		e22663f4-2174-4324-bcc9-eb0e5fa8ae8b	6a5d19ef-3ae6-4ab1-bb5e-bdaa42929286
-197	2019-10-09		Necropower	5da5893e-8432-43da-bf0d-a2132b44a00f	20 Turns		f683f32b-920e-43d0-8c0d-6dc65002e831	3726e732-e9b3-4192-abe8-2d46f56c1586
-198	2019-10-16		Dragon Skin	3fcb2772-a361-4aa4-b24b-41eedf395490	No Heal Cards		234ae54c-fc57-49b7-8288-71ac97c13ccc	725a1c7d-97a7-4111-ada9-f21b12f513de
-199	2019-10-23		Triton's Will	52707f5f-e2ba-4ef0-a617-27dcc26716a1	No Shield Cards		975ffbbd-9e4c-44f0-a262-a4c870c7c275	4d53061b-85e9-4cdb-a10a-68ef94656f3f
-200	2019-10-30		Perfect Sight	aab76663-46f3-4724-9618-a8ceceaff7ef	Earth Damage		605bdc31-9aa1-4000-82fe-660ee47a98a4	31bf046c-6825-4bc0-8cb3-4b30e765891e
-201	2019-11-06		Mead Gulp	39bdbd99-de38-4e41-905f-588a016a5da1	10 Turns		880cbae6-3300-4980-b7c0-6700edfb38bd	f3f20ab4-8a76-40b2-a509-bd1603ca380b
-202	2019-11-13		Cloak of Flames	0e77add4-2508-4844-b247-e846291219c0	Elementally Weak		eec3c4a4-bce2-43aa-be66-dcbbc1c0f48b	2d413aca-d999-4ed4-af3b-bafda9b2a7d6
-203	2019-11-20		Green Ray	0371b5a8-71cf-4ebd-833c-e3fca87658ab	Single Target		07057855-3abf-4b2c-929e-4162d3cf767f	c631d909-c787-412d-b1c7-48006c597cba
-204	2019-11-27		Salamander Ale	04080ef5-8fbd-4277-a210-8f9a49f728d9	Fire Damage		a3a238cf-2be8-447a-a806-2949d41874f8	f8b3894d-8840-49c2-8f72-e222fdf7cf9e
-205	2019-12-04		Explosive Gadget	1b4ae8e1-0eaf-40a6-8789-b8a9e7ff6a82	80% Health		31f3be3d-2169-4911-a002-d9c0c94603c3	7a6367ad-7a4a-4ef2-8450-930363d4f9e7
-206	2019-12-11		Christmas Tree	6f64b932-f9f6-4114-bbbe-51d63ac6fb87	Earth Damage		1016b51b-f1f2-42aa-a642-cb321e101b3c	b326a6ea-d513-4ad1-a4b2-5518d36cc792
-207	2019-12-18	8334bb40-67cb-49a4-80d9-ef150d8b832b	Justicar	6bdab636-2779-46b6-846b-d157e8ffd9c3	Single Target		d4229bce-871e-4cd4-8acf-7fd8b4977f8c	f5d73a94-4550-42a3-8827-3fef6cec4495
-208	2019-12-25		Frost Ray	new	Magic Heroes		5b04839c-7165-4154-8f2b-d5b442027bba	d7da90d4-51b4-4d2e-8a73-45b7fcfc37f4
-209	2019-01-01		Dragon Skin	3fcb2772-a361-4aa4-b24b-41eedf395490	10 Turns		a7a0d315-74cc-4df2-956e-e892a87201b8	b513207a-8eff-4c8e-9170-a8921fc503a6
-210	2019-01-08		Obscuring Explode	4c29bf06-eea8-4d39-ad61-bba6f0f40785	No Duplicates		e5adbcde-9ef7-4a89-8df0-06f3009261e3	375087de-7ff3-4f59-ae2d-67611e136d71`;
+1	2021-01-01		Dragon Skin	3fcb2772-a361-4aa4-b24b-41eedf395490	10 Turns		a7a0d315-74cc-4df2-956e-e892a87201b8	b513207a-8eff-4c8e-9170-a8921fc503a6
+2	2021-01-08		Obscuring Explode	4c29bf06-eea8-4d39-ad61-bba6f0f40785	No Duplicates		e5adbcde-9ef7-4a89-8df0-06f3009261e3	375087de-7ff3-4f59-ae2d-67611e136d71
+3	2021-01-15		Turkey Sagitta	0af293cc-e831-4bb4-ab05-f6136739d3d6	Single Target		d8345a49-90b3-42c6-a93b-4aaf83fa51f2	8bddb788-3376-4c7c-b06c-650952686f5e
+4	2021-01-22		Puck's Grace	604da5c4-91a0-4b92-85ff-62579b8b1b98	80% Health		1016b51b-f1f2-42aa-a642-cb321e101b3c	b326a6ea-d513-4ad1-a4b2-5518d36cc792
+5	2021-01-29		Divine Storm	c58bdc6f-dcea-467d-86f6-d960ef175f17	Kill with Shock		1d81c968-d770-4911-860d-45674df80e3c	b91a58a5-82d9-45a4-a107-e6f016351103
+6	2021-02-05		Ice Queen Protector	f24cdbe0-ce3f-43f2-8da9-8806ce95a889	10 Turns		dcd07858-cd17-406f-b244-8352af260a4a	5cfad6d9-0a99-4a46-a0c9-034c3c07ecc9
+7	2021-02-12		Pierced Heart	6bb73a15-1dd9-4b5c-939b-b0db0821da54	No Duplicates		eeb5cca9-9035-4916-93dd-f19a78692c45	1d674b4b-1b83-4214-a573-689692949217
+8	2021-02-19		Poseidon's Will	66e1fc7b-bef5-47f5-9df1-480b447da8ee	Elementally Weak		e0b62bce-891b-41b2-a431-b1395f1cac04	515ee0ed-bca1-47ba-ab19-e1d141928de2
+9	2021-02-26		Retribution Curse	2124e6c2-5a5b-4751-9cb8-bcdf3851033e	Spirit Damage		2715c025-d434-4901-8772-53d45137a29f	5970bd53-20c1-4b9d-bf67-d551ff8976ed
+10	2021-03-05		Clay Shower	9c236179-8fd4-42ce-8baa-d363b76fe64d	No Heal Cards		e00b8397-aba3-48f6-a7bd-b7ed2caea0dc	bb0f3f13-64db-4e0a-b014-fe058defa95b
+11	2021-03-12		Fire Bolt	c902ffbd-cb68-45a1-ad18-e2637b8bbd45	10 Turns		fc775d50-19d7-405e-b44c-ae7a4556ee06	fb15b701-22df-4043-872d-dd81d5f111ec
+12	2021-03-19		Wind Barrier	a47b7446-10e5-4cb8-8424-63ea9c8a0dbb	80% Health		65736180-a93d-4ec7-9358-e2c384064a1e	0dc17e79-a679-442e-943e-6d3c7625000d
+13	2021-03-26		Ancient Mariner	2fae8526-d65d-42c9-90f8-3559b503d350	Elementally Weak		882a2392-3b7e-48ce-ac29-c6abe62f9b71	6b8239e5-f465-447b-be8a-3688f8bdcf8f
+14	2021-04-02		Fuel the Fire	e4500c85-4252-49a8-8ee2-f0ceb79c26ed	Fire Damage		cd3872a7-730f-494b-a1a5-aef7a24de03c	f78d91f0-6ce8-4a02-8344-9aad108acc29
+15	2021-04-09		Crippling Bolt	ea82fc5f-3d5b-4839-951c-f41c1758bc4a	Magic Heroes		1781656e-fd3b-4700-8df7-ae8437a77817	7379a95b-be69-4923-b2f2-2950509898e7
+16	2021-04-16		Vampiric Lord	89633574-34fb-4ddb-b8b7-e15c1f9f86c7	Magic Heroes		a2e873b7-6729-40da-9af1-ccbd73b12aea	20ce9dea-efcd-4617-9997-166cf67bfd88
+17	2021-04-23		Uber Cornholio	186a2925-293e-4ad0-8a0c-08f73843ab5b	No Heal Cards		1ab4c6c3-bded-4036-ab01-4ecbc900e41e	5aa5430e-2480-467c-ac9f-8deab92911e0
+18	2021-04-30		Elven Precision	256415a4-4199-41f2-b59e-da668b8ff419	Earth Damage		8dd624a3-4985-4ca1-ba13-baffb9565992	a1801021-06e9-4966-b40e-e39f1fbcfa12
+19	2021-05-07		Ice Bolt	ca151f04-9d1d-44eb-b3e2-6e8ab1a0c99d	Single Target		ce1107e8-255b-4e83-80c7-5bfe0bfdb0d8	62459f34-8a18-455e-b663-1831af291290
+20	2021-05-14		Scorching Flames	e169a478-0a5c-40e6-abfd-b5fbd1d0215c	Kill with Burn		cdb10572-30e7-483d-a2a8-c6e09e0721c1	cbcd31b7-b8da-418b-91ec-fa0847b43ff7
+21	2021-05-21		Shield of the Nature	c7dbcfd4-eb5d-455f-8388-19c44e179fae	Skill Heroes		1cf47f00-bddb-4cf9-9565-86bf7e9b2d3f	3f34883c-4b61-4878-bcb6-df48dfe3c38e
+22	2021-05-28		Monster Juice	e09853ea-7de8-409e-9629-b27688f07d79	20 Turns		7f311ce2-4cfb-483e-a7c4-0e58ac61b767	7d1e6569-8639-4a10-85e3-69b9c137af4c
+23	2021-06-04		Ninja Grenade	af9c6f27-b21f-4915-92ac-0537d2bf8ace	Multi/Splash		79a2c77f-042d-431a-abdf-2516ffc4dfb4	ebb9095f-2947-47db-b8fb-5bb92017366b
+24	2021-06-11		Pyro Dagger	b1a7c1a4-6137-45da-a85c-c53b631d2be1	No Duplicates		6c56e91f-996b-4a0c-ae27-f407a3c70906	dd0eac87-af34-4a05-86a4-2ba1ae2b07d2
+25	2021-06-18		Dagger of Truth	52bc6c8e-8d0d-4d00-ab2b-dc3e1eb8b1fd	10 Turns		31c45ce0-b7e2-4db4-9065-288824863321	dbba92bd-0568-487c-b83b-65ddeb94594a
+26	2021-06-25		Fafnir's Blood	c7e7f45c-61e6-42be-b9e2-4abebfec4ff4	Might Heroes		5b04839c-7165-4154-8f2b-d5b442027bba	d7da90d4-51b4-4d2e-8a73-45b7fcfc37f4
+27	2021-07-02		Pyroclastic Strike	780ba3a6-35ca-461c-89ab-2e575e59e257	Kill with Burn		1abf0b62-59e3-4505-8468-53a6f1cc8524	578ba7f1-4c85-4c24-bae3-857aad1e2b92
+28	2021-07-09		Toxic Bolt	9dd77979-074a-4c74-baf6-812433170d8d	80% Health		a064b665-17bd-420e-92bd-8a67305cab61	b4359627-35a3-4b5f-baa6-fefb355b1d88
+29	2021-07-16		Hex	704f66dd-5c3d-4c1b-a880-f135e228e9b2	Elementally Weak		51f5bac1-6c8a-45ca-8014-054937b0ebef	a25db2b2-6b33-42bc-89e3-eeb2bf14a472
+30	2021-07-23		Wind Dart	6d954303-3327-48cb-818a-b760a9dac770	Air Damage		4b81cc0b-8c30-4140-bf51-80f2a9fcd9ae	4b356940-4865-4a0e-ae26-80baad1da720
+31	2021-07-30		Witchcraft	843d7cf7-29f6-4885-856a-4844a43df75d	Single Target		e4588d59-61f6-4980-a28e-c1a65a31041f	71b87e7e-1c33-4e5a-bb2b-163a870f6088
+32	2021-08-06		Ascetic Lesson	f5f5a05b-4afa-4c81-a380-579cec8f2421	Magic Heroes		5f9b589c-644a-4cae-a23f-b09697485dcd	6edf4332-68b9-45b4-982f-90ad2f7e4eb4
+33	2021-08-13		Blazing Ray	04f4aa00-1fd2-4377-8489-c576dddb3d32	No Heal Cards		645927d5-f4a4-46b5-ab9f-09c91a6cc271	d08a2a25-dd96-4582-91c9-ac3111762b4b
+34	2021-08-20		Cornholio	40f6062d-5ba2-4cf8-ab7d-5a25f920fb56	Earth Damage		2b4d3c80-9cc3-4a5f-8603-4afca8b8d66f	fd1f7c8c-8d75-4bd5-9fdf-90b797d9ccce
+35	2021-08-27		Salamander Skin	9e9043da-49b8-4f8b-82fa-6fa1c7958504	10 Turns		56591386-7f84-4f5d-aaa4-52e97580dfc4	15be7700-071e-48b8-a076-f38b046c5837
+36	2021-09-03		Whispering Blade	1ee64443-c230-400c-8835-6c23f870886e	Skill Heroes		66288279-e568-492a-a995-803371b38d83	88b3d52e-2ee7-4baf-87da-7acb140dbf14
+37	2021-09-10		Great Ball of Fire	c71682e3-3566-4b6b-a510-57469aaaf5ec	Kill with Burn		9ac1fc03-4f03-4431-97b8-51a95f5f97c3	93a20334-7d59-47c7-93d3-9c668c1fcb0c
+38	2021-09-17		Vigilant Shield	1631a55f-87af-499a-8a40-f99d675fe9f9	10 Turns		253c3d95-e2b4-41b9-ab28-c20e57718957	4678b030-0f94-4acf-bc8e-75ceab34cc79
+39	2021-09-24		Mark of Vengeance	6e794567-936c-4fd5-b733-1f9cb6a41c16	Single Target		2d217ee9-ed70-457c-8f6c-9d72ee05914d	9347549b-505a-42b6-92e7-050a4c903e56
+40	2021-10-01		Perfect Cut	319f2fff-3c99-4c18-87fc-570733762a21	No Duplicates		e22663f4-2174-4324-bcc9-eb0e5fa8ae8b	6a5d19ef-3ae6-4ab1-bb5e-bdaa42929286
+41	2021-10-08		Necropower	5da5893e-8432-43da-bf0d-a2132b44a00f	20 Turns		f683f32b-920e-43d0-8c0d-6dc65002e831	3726e732-e9b3-4192-abe8-2d46f56c1586
+42	2021-10-15		Dragon Skin	3fcb2772-a361-4aa4-b24b-41eedf395490	No Heal Cards		234ae54c-fc57-49b7-8288-71ac97c13ccc	725a1c7d-97a7-4111-ada9-f21b12f513de
+43	2021-10-22		Triton's Will	52707f5f-e2ba-4ef0-a617-27dcc26716a1	No Shield Cards		975ffbbd-9e4c-44f0-a262-a4c870c7c275	4d53061b-85e9-4cdb-a10a-68ef94656f3f
+44	2021-10-29		Perfect Sight	aab76663-46f3-4724-9618-a8ceceaff7ef	Earth Damage		605bdc31-9aa1-4000-82fe-660ee47a98a4	31bf046c-6825-4bc0-8cb3-4b30e765891e
+45	2021-11-05		Mead Gulp	39bdbd99-de38-4e41-905f-588a016a5da1	10 Turns		880cbae6-3300-4980-b7c0-6700edfb38bd	f3f20ab4-8a76-40b2-a509-bd1603ca380b
+46	2021-11-12		Cloak of Flames	0e77add4-2508-4844-b247-e846291219c0	Elementally Weak		eec3c4a4-bce2-43aa-be66-dcbbc1c0f48b	2d413aca-d999-4ed4-af3b-bafda9b2a7d6
+47	2021-11-19		Green Ray	0371b5a8-71cf-4ebd-833c-e3fca87658ab	Single Target		07057855-3abf-4b2c-929e-4162d3cf767f	c631d909-c787-412d-b1c7-48006c597cba
+48	2021-11-26		Salamander Ale	04080ef5-8fbd-4277-a210-8f9a49f728d9	Fire Damage		a3a238cf-2be8-447a-a806-2949d41874f8	f8b3894d-8840-49c2-8f72-e222fdf7cf9e
+49	2021-12-03		Explosive Gadget	1b4ae8e1-0eaf-40a6-8789-b8a9e7ff6a82	80% Health		31f3be3d-2169-4911-a002-d9c0c94603c3	7a6367ad-7a4a-4ef2-8450-930363d4f9e7
+50	2021-12-10		Christmas Tree	6f64b932-f9f6-4114-bbbe-51d63ac6fb87	Earth Damage		1016b51b-f1f2-42aa-a642-cb321e101b3c	b326a6ea-d513-4ad1-a4b2-5518d36cc792
+51	2021-12-17		Justicar	6bdab636-2779-46b6-846b-d157e8ffd9c3	Single Target		d4229bce-871e-4cd4-8acf-7fd8b4977f8c	f5d73a94-4550-42a3-8827-3fef6cec4495
+52	2021-12-24		Frost Ray	7717e41b-0893-482e-8e27-2a92ea92a586	Magic Heroes		5b04839c-7165-4154-8f2b-d5b442027bba	d7da90d4-51b4-4d2e-8a73-45b7fcfc37f4
+53	2021-12-31		Dragon Skin	3fcb2772-a361-4aa4-b24b-41eedf395490	10 Turns		a7a0d315-74cc-4df2-956e-e892a87201b8	b513207a-8eff-4c8e-9170-a8921fc503a6`;
