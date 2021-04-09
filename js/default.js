@@ -4711,8 +4711,9 @@ var bh;
                 return `<div class="${hiddenXs ? "hidden-xs" : ""} bh-hud-image img-${guid}" title="${title}" data-toggle="tooltip" data-placement="top" data-search-term="${term}"></div>`;
             }
             function renderCards(sortByPower = location.search.includes("sortByPower")) {
-                let complete = location.search.includes("complete"),
-                    cards = bh.data.BattleCardRepo.all;
+                //let complete = location.search.includes("complete");
+                let complete = true;
+                let cards = bh.data.BattleCardRepo.all;
                 sortByPower && bh.PowerRating.sortCardsByPowerRating(cards), $('a[href="#card-table"] > span.badge').text(String(cards.length));
                 let tbody = $("table.card-list > tbody").empty();
                 cards.forEach((card) => {
