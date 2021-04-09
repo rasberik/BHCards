@@ -4143,7 +4143,7 @@ var bh;
             function renderHtml() {
                 let versionAttributes,
                     html = `<div class="jai-hud-header">\n\t<button class="bs-btn bs-btn-link bs-btn-xs jai-hud-toggle pull-left" data-action="toggle-hud-bigger">[+]</button>\n\t<button class="bs-btn bs-btn-link bs-btn-xs jai-hud-toggle pull-right" data-action="toggle-hud-smaller">[-]</button>\n` + 
-                    `\t<span class="header" data-action="toggle-game-only">BattleHand HUD<span ${
+                    `\t<span class="header" data-action="toggle-game-only">BattleHand HUD <span ${
                         bh.Version !== bh.CurrentVersion ? `style="color:red;cursor:pointer;" title="Please upgrade to v${bh.CurrentVersion}"` : ""
                     }>(v${
                         bh.Version
