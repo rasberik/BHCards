@@ -4371,8 +4371,9 @@ var bh;
                         $(div)
                             .find("h3")
                             .text(`Evolution from ${i} to ${i + 1}`)
-                    ),
-                    bh.utils.ResizeManager.startListening();
+                    )
+                    //,
+                    //bh.utils.ResizeManager.startListening();
             }
             function onSearchImage(ev) {
                 let el,
@@ -5103,42 +5104,7 @@ class XmlHttpRequest {
     (XmlHttpRequest.OPENED = XMLHttpRequest.OPENED),
     (XmlHttpRequest.UNSENT = XMLHttpRequest.UNSENT),
     (XmlHttpRequest.globalListeners = []),
-    (function (bh) {
-        let utils;
-        !(function (utils) {
-            let timeout,
-                listener = () => ResizeManager.fire();
-            class ResizeManager {
-                static fire() {
-                    timeout && clearTimeout(timeout), (timeout = setTimeout(resize, 5000));
-                }
-                static startListening() {
-                    ResizeManager.fire(), window.$(window).on("resize", listener);
-                }
-                static stopListening() {
-                    window.$(window).off("resize", listener);
-                }
-            }
-            function resize() {
-                let all = window.$(".resize-manager"),
-                    heightScrollers = all.filter(".resize-height").css("height", 0);
-                heightScrollers.length &&
-                    heightScrollers.each((index, element) => {
-                        let maxHeight = document.documentElement.clientHeight,
-                            scroller = window.$(element).css("height", maxHeight);
-                        for (; document.documentElement.clientHeight < document.documentElement.scrollHeight && maxHeight > 0; ) scroller.css("height", --maxHeight);
-                    });
-                let widthScrollers = all.filter(".resize-width").css("width", 0);
-                widthScrollers.length &&
-                    widthScrollers.each((index, element) => {
-                        let maxWidth = document.documentElement.clientWidth,
-                            scroller = window.$(element).css("width", maxWidth);
-                        for (; document.documentElement.clientWidth < document.documentElement.scrollWidth && maxWidth > 0; ) scroller.css("width", --maxWidth);
-                    });
-            }
-            utils.ResizeManager = ResizeManager;
-        })((utils = bh.utils || (bh.utils = {})));
-    })(bh || (bh = {})),
+   
     (function (bh) {
         let utils;
         !(function (utils) {
