@@ -2985,9 +2985,9 @@ var bh;
                             role = bh.PositionType[member.position] + 1,
                             fame = member.fameLevel + 1,
                             heroData = data.HeroRepo.sorted.map(player ? mapPlayerHero : mapHero),
-                            position = index ? index + 1 : "GL",
+                            position = index ? index + 1 : "👑",
                             memberName = member.name;
-                        return player && !player.hasWarBragEquipped && (memberName += " Ã¸"), [position, fame, memberName, role, ...heroData].join("\t");
+                        return player && !player.hasWarBragEquipped && (memberName += " 𝔅 "), [position, fame, memberName, role, ...heroData].join("\t");
                         function mapHero(hero) {
                             let level = member.archetypeLevels[hero.guid] + 1,
                                 hp = level && bh.utils.truncateNumber(hero.getHitPoints(level));
