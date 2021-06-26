@@ -5110,7 +5110,7 @@ class XmlHttpRequest {
                 listener = () => ResizeManager.fire();
             class ResizeManager {
                 static fire() {
-                    timeout && clearTimeout(timeout), (timeout = setTimeout(resize, 100));
+                    timeout && clearTimeout(timeout), (timeout = setTimeout(resize, 5000));
                 }
                 static startListening() {
                     ResizeManager.fire(), window.$(window).on("resize", listener);
